@@ -8,10 +8,10 @@
 
 ///宏定义
 
-///判断是不是开发、调试状态，如果是开发、调试状态，就让LBNCLog替换NSLog
+///判断是不是开发、调试状态，如果是开发、调试状态，就让LBSMLog替换NSLog
 #ifdef DEBUG
-///LBNCLog是不限制参数的，中间用三个英文句号表示
-#define LBNCLog(...) NSLog(__VA_ARGS__)
+///LBSMLog是不限制参数的，中间用三个英文句号表示
+#define LBSMLog(...) NSLog(__VA_ARGS__)
 ///如果是发布状态LBNCLog就直接为空
 #define kHeight [UIScreen cz_screenHeight] / 750.0
 //标题字体
@@ -27,6 +27,6 @@
 
 
 #elif
-#define LBNCLog(...)
+#define LBSMLog(...)
 #endif
 

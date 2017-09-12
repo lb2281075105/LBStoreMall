@@ -26,6 +26,12 @@
 		3AFA7EBA1F64546300CC1D2D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3AFA7EB81F64546300CC1D2D /* LaunchScreen.storyboard */; };
 		3AFA7EC51F64546300CC1D2D /* LBStoreMallTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AFA7EC41F64546300CC1D2D /* LBStoreMallTests.m */; };
 		3AFA7ED01F64546300CC1D2D /* LBStoreMallUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AFA7ECF1F64546300CC1D2D /* LBStoreMallUITests.m */; };
+		F87B43BF1F678726005ED2BC /* LBSMNavController.m in Sources */ = {isa = PBXBuildFile; fileRef = F87B43BE1F678726005ED2BC /* LBSMNavController.m */; };
+		F87B43C71F678BEE005ED2BC /* LBSMTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = F87B43C61F678BEE005ED2BC /* LBSMTabBar.m */; };
+		F87B43CE1F67D541005ED2BC /* LBSMClassifyController.m in Sources */ = {isa = PBXBuildFile; fileRef = F87B43CD1F67D541005ED2BC /* LBSMClassifyController.m */; };
+		F87B43D11F67D55C005ED2BC /* LBSMHomeController.m in Sources */ = {isa = PBXBuildFile; fileRef = F87B43D01F67D55C005ED2BC /* LBSMHomeController.m */; };
+		F87B43D41F67D56A005ED2BC /* LBSMMineController.m in Sources */ = {isa = PBXBuildFile; fileRef = F87B43D31F67D56A005ED2BC /* LBSMMineController.m */; };
+		F87B43D71F67D57C005ED2BC /* LBSMShopController.m in Sources */ = {isa = PBXBuildFile; fileRef = F87B43D61F67D57C005ED2BC /* LBSMShopController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -88,6 +94,18 @@
 		3AFA7ECB1F64546300CC1D2D /* LBStoreMallUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LBStoreMallUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3AFA7ECF1F64546300CC1D2D /* LBStoreMallUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LBStoreMallUITests.m; sourceTree = "<group>"; };
 		3AFA7ED11F64546300CC1D2D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F87B43BD1F678726005ED2BC /* LBSMNavController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LBSMNavController.h; sourceTree = "<group>"; };
+		F87B43BE1F678726005ED2BC /* LBSMNavController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LBSMNavController.m; sourceTree = "<group>"; };
+		F87B43C51F678BEE005ED2BC /* LBSMTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LBSMTabBar.h; sourceTree = "<group>"; };
+		F87B43C61F678BEE005ED2BC /* LBSMTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LBSMTabBar.m; sourceTree = "<group>"; };
+		F87B43CC1F67D541005ED2BC /* LBSMClassifyController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LBSMClassifyController.h; sourceTree = "<group>"; };
+		F87B43CD1F67D541005ED2BC /* LBSMClassifyController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LBSMClassifyController.m; sourceTree = "<group>"; };
+		F87B43CF1F67D55C005ED2BC /* LBSMHomeController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LBSMHomeController.h; sourceTree = "<group>"; };
+		F87B43D01F67D55C005ED2BC /* LBSMHomeController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LBSMHomeController.m; sourceTree = "<group>"; };
+		F87B43D21F67D56A005ED2BC /* LBSMMineController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LBSMMineController.h; sourceTree = "<group>"; };
+		F87B43D31F67D56A005ED2BC /* LBSMMineController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LBSMMineController.m; sourceTree = "<group>"; };
+		F87B43D51F67D57C005ED2BC /* LBSMShopController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LBSMShopController.h; sourceTree = "<group>"; };
+		F87B43D61F67D57C005ED2BC /* LBSMShopController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LBSMShopController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,11 +138,11 @@
 			children = (
 				3AA90C391F651B0B00048C39 /* common */,
 				3AA90C3A1F651B0B00048C39 /* controller */,
-				3AA90C3B1F651B0B00048C39 /* model */,
-				3AA90C3C1F651B0B00048C39 /* net */,
 				3AA90C3D1F651B0B00048C39 /* orther */,
-				3AA90C3E1F651B0B00048C39 /* view */,
-				3AA90C3F1F651B0B00048C39 /* viewModel */,
+				F87B43C01F678B8E005ED2BC /* model */,
+				F87B43C11F678B8E005ED2BC /* net */,
+				F87B43C21F678B8E005ED2BC /* view */,
+				F87B43C31F678B8E005ED2BC /* viewModel */,
 			);
 			path = classes;
 			sourceTree = "<group>";
@@ -140,23 +158,13 @@
 		3AA90C3A1F651B0B00048C39 /* controller */ = {
 			isa = PBXGroup;
 			children = (
+				F87B43C81F67D525005ED2BC /* classify */,
+				F87B43C91F67D525005ED2BC /* home */,
+				F87B43CA1F67D525005ED2BC /* mine */,
+				F87B43CB1F67D525005ED2BC /* shopping */,
 				3AA90C6B1F651D0A00048C39 /* main */,
 			);
 			path = controller;
-			sourceTree = "<group>";
-		};
-		3AA90C3B1F651B0B00048C39 /* model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = model;
-			sourceTree = "<group>";
-		};
-		3AA90C3C1F651B0B00048C39 /* net */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = net;
 			sourceTree = "<group>";
 		};
 		3AA90C3D1F651B0B00048C39 /* orther */ = {
@@ -166,20 +174,6 @@
 				3AA90C691F651CB900048C39 /* AppDelegate.m */,
 			);
 			path = orther;
-			sourceTree = "<group>";
-		};
-		3AA90C3E1F651B0B00048C39 /* view */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = view;
-			sourceTree = "<group>";
-		};
-		3AA90C3F1F651B0B00048C39 /* viewModel */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = viewModel;
 			sourceTree = "<group>";
 		};
 		3AA90C401F651B2B00048C39 /* Additions */ = {
@@ -219,6 +213,8 @@
 			children = (
 				3AA90C6C1F651D2100048C39 /* LBSMTabBarController.h */,
 				3AA90C6D1F651D2100048C39 /* LBSMTabBarController.m */,
+				F87B43BD1F678726005ED2BC /* LBSMNavController.h */,
+				F87B43BE1F678726005ED2BC /* LBSMNavController.m */,
 			);
 			path = main;
 			sourceTree = "<group>";
@@ -281,6 +277,80 @@
 				3AFA7ED11F64546300CC1D2D /* Info.plist */,
 			);
 			path = LBStoreMallUITests;
+			sourceTree = "<group>";
+		};
+		F87B43C01F678B8E005ED2BC /* model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		F87B43C11F678B8E005ED2BC /* net */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = net;
+			sourceTree = "<group>";
+		};
+		F87B43C21F678B8E005ED2BC /* view */ = {
+			isa = PBXGroup;
+			children = (
+				F87B43C41F678BB0005ED2BC /* main */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		F87B43C31F678B8E005ED2BC /* viewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = viewModel;
+			sourceTree = "<group>";
+		};
+		F87B43C41F678BB0005ED2BC /* main */ = {
+			isa = PBXGroup;
+			children = (
+				F87B43C51F678BEE005ED2BC /* LBSMTabBar.h */,
+				F87B43C61F678BEE005ED2BC /* LBSMTabBar.m */,
+			);
+			path = main;
+			sourceTree = "<group>";
+		};
+		F87B43C81F67D525005ED2BC /* classify */ = {
+			isa = PBXGroup;
+			children = (
+				F87B43CC1F67D541005ED2BC /* LBSMClassifyController.h */,
+				F87B43CD1F67D541005ED2BC /* LBSMClassifyController.m */,
+			);
+			path = classify;
+			sourceTree = "<group>";
+		};
+		F87B43C91F67D525005ED2BC /* home */ = {
+			isa = PBXGroup;
+			children = (
+				F87B43CF1F67D55C005ED2BC /* LBSMHomeController.h */,
+				F87B43D01F67D55C005ED2BC /* LBSMHomeController.m */,
+			);
+			path = home;
+			sourceTree = "<group>";
+		};
+		F87B43CA1F67D525005ED2BC /* mine */ = {
+			isa = PBXGroup;
+			children = (
+				F87B43D21F67D56A005ED2BC /* LBSMMineController.h */,
+				F87B43D31F67D56A005ED2BC /* LBSMMineController.m */,
+			);
+			path = mine;
+			sourceTree = "<group>";
+		};
+		F87B43CB1F67D525005ED2BC /* shopping */ = {
+			isa = PBXGroup;
+			children = (
+				F87B43D51F67D57C005ED2BC /* LBSMShopController.h */,
+				F87B43D61F67D57C005ED2BC /* LBSMShopController.m */,
+			);
+			path = shopping;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -422,11 +492,17 @@
 				3AA90C601F651B2B00048C39 /* UIButton+CZAddition.m in Sources */,
 				3AA90C5F1F651B2B00048C39 /* NSString+CZPath.m in Sources */,
 				3AA90C5D1F651B2B00048C39 /* NSString+CZBase64.m in Sources */,
+				F87B43C71F678BEE005ED2BC /* LBSMTabBar.m in Sources */,
+				F87B43BF1F678726005ED2BC /* LBSMNavController.m in Sources */,
 				3AA90C5B1F651B2B00048C39 /* NSAttributedString+CZAdditon.m in Sources */,
 				3AA90C641F651B2B00048C39 /* UIView+CZAddition.m in Sources */,
+				F87B43CE1F67D541005ED2BC /* LBSMClassifyController.m in Sources */,
 				3AA90C6A1F651CB900048C39 /* AppDelegate.m in Sources */,
+				F87B43D71F67D57C005ED2BC /* LBSMShopController.m in Sources */,
+				F87B43D11F67D55C005ED2BC /* LBSMHomeController.m in Sources */,
 				3AA90C621F651B2B00048C39 /* UILabel+CZAddition.m in Sources */,
 				3AA90C631F651B2B00048C39 /* UIScreen+CZAddition.m in Sources */,
+				F87B43D41F67D56A005ED2BC /* LBSMMineController.m in Sources */,
 				3AA90C651F651B2B00048C39 /* UIViewController+CZAddition.m in Sources */,
 				3AA90C5C1F651B2B00048C39 /* NSObject+CZRuntime.m in Sources */,
 				3AA90C5E1F651B2B00048C39 /* NSString+CZHash.m in Sources */,
