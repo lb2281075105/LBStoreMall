@@ -32,6 +32,7 @@
 		F87B43D11F67D55C005ED2BC /* LBSMHomeController.m in Sources */ = {isa = PBXBuildFile; fileRef = F87B43D01F67D55C005ED2BC /* LBSMHomeController.m */; };
 		F87B43D41F67D56A005ED2BC /* LBSMMineController.m in Sources */ = {isa = PBXBuildFile; fileRef = F87B43D31F67D56A005ED2BC /* LBSMMineController.m */; };
 		F87B43D71F67D57C005ED2BC /* LBSMShopController.m in Sources */ = {isa = PBXBuildFile; fileRef = F87B43D61F67D57C005ED2BC /* LBSMShopController.m */; };
+		F94E060C399C91F075D61321 /* libPods-LBStoreMall.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A304A683BFA9B931C1ECDFC9 /* libPods-LBStoreMall.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +53,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2C461B054A4E5F8BBDCB051A /* Pods-LBStoreMall.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LBStoreMall.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LBStoreMall/Pods-LBStoreMall.debug.xcconfig"; sourceTree = "<group>"; };
 		3AA90C411F651B2B00048C39 /* CZAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CZAdditions.h; sourceTree = "<group>"; };
 		3AA90C421F651B2B00048C39 /* NSArray+Log.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+Log.h"; sourceTree = "<group>"; };
 		3AA90C431F651B2B00048C39 /* NSArray+Log.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Log.m"; sourceTree = "<group>"; };
@@ -94,6 +96,8 @@
 		3AFA7ECB1F64546300CC1D2D /* LBStoreMallUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LBStoreMallUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3AFA7ECF1F64546300CC1D2D /* LBStoreMallUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LBStoreMallUITests.m; sourceTree = "<group>"; };
 		3AFA7ED11F64546300CC1D2D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6E447257B58F99E197A98854 /* Pods-LBStoreMall.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LBStoreMall.release.xcconfig"; path = "Pods/Target Support Files/Pods-LBStoreMall/Pods-LBStoreMall.release.xcconfig"; sourceTree = "<group>"; };
+		A304A683BFA9B931C1ECDFC9 /* libPods-LBStoreMall.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-LBStoreMall.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F87B43BD1F678726005ED2BC /* LBSMNavController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LBSMNavController.h; sourceTree = "<group>"; };
 		F87B43BE1F678726005ED2BC /* LBSMNavController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LBSMNavController.m; sourceTree = "<group>"; };
 		F87B43C51F678BEE005ED2BC /* LBSMTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LBSMTabBar.h; sourceTree = "<group>"; };
@@ -113,6 +117,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F94E060C399C91F075D61321 /* libPods-LBStoreMall.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -133,6 +138,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		21A98F26D59C8B1360620900 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A304A683BFA9B931C1ECDFC9 /* libPods-LBStoreMall.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		3AA90C381F651B0B00048C39 /* classes */ = {
 			isa = PBXGroup;
 			children = (
@@ -226,6 +239,8 @@
 				3AFA7EC31F64546300CC1D2D /* LBStoreMallTests */,
 				3AFA7ECE1F64546300CC1D2D /* LBStoreMallUITests */,
 				3AFA7EA81F64546300CC1D2D /* Products */,
+				58F9DD4EEE1AC6111C050E33 /* Pods */,
+				21A98F26D59C8B1360620900 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -277,6 +292,15 @@
 				3AFA7ED11F64546300CC1D2D /* Info.plist */,
 			);
 			path = LBStoreMallUITests;
+			sourceTree = "<group>";
+		};
+		58F9DD4EEE1AC6111C050E33 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2C461B054A4E5F8BBDCB051A /* Pods-LBStoreMall.debug.xcconfig */,
+				6E447257B58F99E197A98854 /* Pods-LBStoreMall.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 		F87B43C01F678B8E005ED2BC /* model */ = {
@@ -360,9 +384,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3AFA7ED41F64546300CC1D2D /* Build configuration list for PBXNativeTarget "LBStoreMall" */;
 			buildPhases = (
+				C770EC2A9563A5FAB596A7CA /* [CP] Check Pods Manifest.lock */,
 				3AFA7EA31F64546300CC1D2D /* Sources */,
 				3AFA7EA41F64546300CC1D2D /* Frameworks */,
 				3AFA7EA51F64546300CC1D2D /* Resources */,
+				B18746AD443983CFF6D5B816 /* [CP] Embed Pods Frameworks */,
+				D83BA7E0D554269D384A8B0F /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -481,6 +508,57 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		B18746AD443983CFF6D5B816 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LBStoreMall/Pods-LBStoreMall-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C770EC2A9563A5FAB596A7CA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-LBStoreMall-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D83BA7E0D554269D384A8B0F /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LBStoreMall/Pods-LBStoreMall-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		3AFA7EA31F64546300CC1D2D /* Sources */ = {
@@ -646,6 +724,7 @@
 		};
 		3AFA7ED51F64546300CC1D2D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2C461B054A4E5F8BBDCB051A /* Pods-LBStoreMall.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -661,6 +740,7 @@
 		};
 		3AFA7ED61F64546300CC1D2D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6E447257B58F99E197A98854 /* Pods-LBStoreMall.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;

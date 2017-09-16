@@ -1,0 +1,485 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1DB14BF1F7776301594B8FACD8B18794 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */; };
+		98C35EA6D774387943F8791D27A91DB2 /* ZYCornerRadius-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C14E0B7CED2ED078421358D3C621FB1D /* ZYCornerRadius-dummy.m */; };
+		9CCDFC387ABFBB17B490AD4CDEC2F971 /* Pods-LBStoreMall-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 884B1E3DE862EC1253CF0ADA3572597E /* Pods-LBStoreMall-dummy.m */; };
+		ACA7C5BA1A8ABD9A1F51A9B6371A389B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */; };
+		CECAF5F314FE2E15C1B9B3CB0ADABA98 /* UIImageView+CornerRadius.m in Sources */ = {isa = PBXBuildFile; fileRef = C5797BB685EA5671F13FE8240F36E9D5 /* UIImageView+CornerRadius.m */; };
+		D72D23ACD69A4FAB26210A92BA93F0F3 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B63C6A64CF66340668996F78DA6BB482 /* UIKit.framework */; };
+		EF7B0AD2B226CD7828806270011CB21E /* UIImageView+CornerRadius.h in Headers */ = {isa = PBXBuildFile; fileRef = 5852CC5378A73F8A2EB5356B2E499FE1 /* UIImageView+CornerRadius.h */; settings = {ATTRIBUTES = (Public, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		508646430F600F135BBF1EC2F97D0B3C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4C53E3D2991E4B8C8D70B0E1AF1F25D0;
+			remoteInfo = ZYCornerRadius;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0E14D899752855FA79D7501D1681F638 /* ZYCornerRadius.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ZYCornerRadius.xcconfig; sourceTree = "<group>"; };
+		2EA59EC2AF5366DED506393556D56D61 /* libPods-LBStoreMall.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-LBStoreMall.a"; path = "libPods-LBStoreMall.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		30729F2B162E4BC98219F2955073065E /* Pods-LBStoreMall-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-LBStoreMall-resources.sh"; sourceTree = "<group>"; };
+		42BE736C558B267B361035D5E5766F49 /* Pods-LBStoreMall-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-LBStoreMall-acknowledgements.markdown"; sourceTree = "<group>"; };
+		5852CC5378A73F8A2EB5356B2E499FE1 /* UIImageView+CornerRadius.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImageView+CornerRadius.h"; path = "ZYCornerRadius/CornerRadiusCategory/UIImageView+CornerRadius.h"; sourceTree = "<group>"; };
+		691F44545F7A9C1F92C47854E0A6BAD5 /* Pods-LBStoreMall.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LBStoreMall.release.xcconfig"; sourceTree = "<group>"; };
+		884B1E3DE862EC1253CF0ADA3572597E /* Pods-LBStoreMall-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-LBStoreMall-dummy.m"; sourceTree = "<group>"; };
+		8A4C0BD7073E88CF380DE21D5A932E8F /* Pods-LBStoreMall-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-LBStoreMall-frameworks.sh"; sourceTree = "<group>"; };
+		9299B494C9EA1666E3031BD5888A573F /* Pods-LBStoreMall.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LBStoreMall.debug.xcconfig"; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		B221825E375F0978C7985ABE60CB033C /* libZYCornerRadius.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libZYCornerRadius.a; path = libZYCornerRadius.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		B63C6A64CF66340668996F78DA6BB482 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		C14E0B7CED2ED078421358D3C621FB1D /* ZYCornerRadius-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ZYCornerRadius-dummy.m"; sourceTree = "<group>"; };
+		C5797BB685EA5671F13FE8240F36E9D5 /* UIImageView+CornerRadius.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImageView+CornerRadius.m"; path = "ZYCornerRadius/CornerRadiusCategory/UIImageView+CornerRadius.m"; sourceTree = "<group>"; };
+		D730A3E777A6E70663DB4CF23CE63B02 /* ZYCornerRadius-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ZYCornerRadius-prefix.pch"; sourceTree = "<group>"; };
+		D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		F8D6507DCC8B6A7A30CF180DC88DC43B /* Pods-LBStoreMall-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-LBStoreMall-acknowledgements.plist"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A5F7754936B163367BDB3FF81AC2ADF0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ACA7C5BA1A8ABD9A1F51A9B6371A389B /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AE11B4D37937525AF07DCB0C18B41B41 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1DB14BF1F7776301594B8FACD8B18794 /* Foundation.framework in Frameworks */,
+				D72D23ACD69A4FAB26210A92BA93F0F3 /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		433CD3331B6C3787F473C941B61FC68F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				438B396F6B4147076630CAEFE34282C1 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		438B396F6B4147076630CAEFE34282C1 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */,
+				B63C6A64CF66340668996F78DA6BB482 /* UIKit.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		54E5A9033FFC01E878B0EDEA447D7971 /* Pods-LBStoreMall */ = {
+			isa = PBXGroup;
+			children = (
+				42BE736C558B267B361035D5E5766F49 /* Pods-LBStoreMall-acknowledgements.markdown */,
+				F8D6507DCC8B6A7A30CF180DC88DC43B /* Pods-LBStoreMall-acknowledgements.plist */,
+				884B1E3DE862EC1253CF0ADA3572597E /* Pods-LBStoreMall-dummy.m */,
+				8A4C0BD7073E88CF380DE21D5A932E8F /* Pods-LBStoreMall-frameworks.sh */,
+				30729F2B162E4BC98219F2955073065E /* Pods-LBStoreMall-resources.sh */,
+				9299B494C9EA1666E3031BD5888A573F /* Pods-LBStoreMall.debug.xcconfig */,
+				691F44545F7A9C1F92C47854E0A6BAD5 /* Pods-LBStoreMall.release.xcconfig */,
+			);
+			name = "Pods-LBStoreMall";
+			path = "Target Support Files/Pods-LBStoreMall";
+			sourceTree = "<group>";
+		};
+		5A4BB79872726B9107AEDB968D8E6DD4 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				54E5A9033FFC01E878B0EDEA447D7971 /* Pods-LBStoreMall */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		7BBEAE7C8D9B32903ECDBD2E6B60C2FF /* ZYCornerRadius */ = {
+			isa = PBXGroup;
+			children = (
+				5852CC5378A73F8A2EB5356B2E499FE1 /* UIImageView+CornerRadius.h */,
+				C5797BB685EA5671F13FE8240F36E9D5 /* UIImageView+CornerRadius.m */,
+				AEB5244FFAB4D6B0158F739297ABA4B4 /* Support Files */,
+			);
+			name = ZYCornerRadius;
+			path = ZYCornerRadius;
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				433CD3331B6C3787F473C941B61FC68F /* Frameworks */,
+				ACD6F1BF0A4199C1D17A075A8C982482 /* Pods */,
+				8D2147D8121440D0CE527F56CB711E6A /* Products */,
+				5A4BB79872726B9107AEDB968D8E6DD4 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		8D2147D8121440D0CE527F56CB711E6A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2EA59EC2AF5366DED506393556D56D61 /* libPods-LBStoreMall.a */,
+				B221825E375F0978C7985ABE60CB033C /* libZYCornerRadius.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		ACD6F1BF0A4199C1D17A075A8C982482 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7BBEAE7C8D9B32903ECDBD2E6B60C2FF /* ZYCornerRadius */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		AEB5244FFAB4D6B0158F739297ABA4B4 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				0E14D899752855FA79D7501D1681F638 /* ZYCornerRadius.xcconfig */,
+				C14E0B7CED2ED078421358D3C621FB1D /* ZYCornerRadius-dummy.m */,
+				D730A3E777A6E70663DB4CF23CE63B02 /* ZYCornerRadius-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/ZYCornerRadius";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		23F703F491E34301632AC470F8545B33 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF7B0AD2B226CD7828806270011CB21E /* UIImageView+CornerRadius.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		4C53E3D2991E4B8C8D70B0E1AF1F25D0 /* ZYCornerRadius */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 52481776724F7D103A2513AFD54D5DC2 /* Build configuration list for PBXNativeTarget "ZYCornerRadius" */;
+			buildPhases = (
+				33EF214B4E96390B35808D66E9505CE1 /* Sources */,
+				AE11B4D37937525AF07DCB0C18B41B41 /* Frameworks */,
+				23F703F491E34301632AC470F8545B33 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ZYCornerRadius;
+			productName = ZYCornerRadius;
+			productReference = B221825E375F0978C7985ABE60CB033C /* libZYCornerRadius.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		DFCE340B73A0A8ABABA92E7B43CBB6F1 /* Pods-LBStoreMall */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FB320D15F0310DB7D348AD19639A6106 /* Build configuration list for PBXNativeTarget "Pods-LBStoreMall" */;
+			buildPhases = (
+				6BA860DA1F0936B8EDF47A355E9DEFEA /* Sources */,
+				A5F7754936B163367BDB3FF81AC2ADF0 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9A61746D4EE84867EC354365B85E6EF1 /* PBXTargetDependency */,
+			);
+			name = "Pods-LBStoreMall";
+			productName = "Pods-LBStoreMall";
+			productReference = 2EA59EC2AF5366DED506393556D56D61 /* libPods-LBStoreMall.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = 8D2147D8121440D0CE527F56CB711E6A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DFCE340B73A0A8ABABA92E7B43CBB6F1 /* Pods-LBStoreMall */,
+				4C53E3D2991E4B8C8D70B0E1AF1F25D0 /* ZYCornerRadius */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		33EF214B4E96390B35808D66E9505CE1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CECAF5F314FE2E15C1B9B3CB0ADABA98 /* UIImageView+CornerRadius.m in Sources */,
+				98C35EA6D774387943F8791D27A91DB2 /* ZYCornerRadius-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6BA860DA1F0936B8EDF47A355E9DEFEA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9CCDFC387ABFBB17B490AD4CDEC2F971 /* Pods-LBStoreMall-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9A61746D4EE84867EC354365B85E6EF1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = ZYCornerRadius;
+			target = 4C53E3D2991E4B8C8D70B0E1AF1F25D0 /* ZYCornerRadius */;
+			targetProxy = 508646430F600F135BBF1EC2F97D0B3C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		1C7D17A37D091C98D2F0DD886C3A9320 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		34FE9531DA9AF2820790339988D5FF41 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5FA793355C6DFA36A496E4D3AD578E1F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9299B494C9EA1666E3031BD5888A573F /* Pods-LBStoreMall.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MACH_O_TYPE = staticlib;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		9F1AFEBA547FEADDBB34F2467F85B2AA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 691F44545F7A9C1F92C47854E0A6BAD5 /* Pods-LBStoreMall.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MACH_O_TYPE = staticlib;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		DEDB21C0A5FCDAA7E99DA7028A256FD7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0E14D899752855FA79D7501D1681F638 /* ZYCornerRadius.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/ZYCornerRadius/ZYCornerRadius-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+			};
+			name = Release;
+		};
+		E991728A8732ECEACE8DE5A434278E5B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0E14D899752855FA79D7501D1681F638 /* ZYCornerRadius.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/ZYCornerRadius/ZYCornerRadius-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1C7D17A37D091C98D2F0DD886C3A9320 /* Debug */,
+				34FE9531DA9AF2820790339988D5FF41 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		52481776724F7D103A2513AFD54D5DC2 /* Build configuration list for PBXNativeTarget "ZYCornerRadius" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E991728A8732ECEACE8DE5A434278E5B /* Debug */,
+				DEDB21C0A5FCDAA7E99DA7028A256FD7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FB320D15F0310DB7D348AD19639A6106 /* Build configuration list for PBXNativeTarget "Pods-LBStoreMall" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5FA793355C6DFA36A496E4D3AD578E1F /* Debug */,
+				9F1AFEBA547FEADDBB34F2467F85B2AA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}
