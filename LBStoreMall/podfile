@@ -5,5 +5,5 @@ platform :ios, '8.0'
 target 'LBStoreMall' do
 
 pod 'ZYCornerRadius'
-
+pod 'ZXingObjC'
 end
