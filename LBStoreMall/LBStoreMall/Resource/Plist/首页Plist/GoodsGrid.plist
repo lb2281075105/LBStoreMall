@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>iconImage</key>
+		<string>http://mp5.jmstatic.com/mobile/card_material/item_3580_160_160-ipad2048_1493697215.png?imageView2/2/w/1200/q/90</string>
+		<key>gridTitle</key>
+		<string>分类</string>
+	</dict>
+	<dict>
+		<key>iconImage</key>
+		<string>http://mp5.jmstatic.com/mobile/card_material/item_3580_160_160-ipad2048_1493697228.png?imageView2/2/w/1200/q/90</string>
+		<key>gridTitle</key>
+		<string>签到</string>
+	</dict>
+	<dict>
+		<key>iconImage</key>
+		<string>http://mp1.jmstatic.com/c_zoom,w_1200,q_80/mobile/card_material/item_3580_160_160-ipad2048_1493697259.png</string>
+		<key>gridTitle</key>
+		<string>凑团</string>
+	</dict>
+	<dict>
+		<key>iconImage</key>
+		<string>http://mp5.jmstatic.com/mobile/card_material/item_3580_160_160-ipad2048_1493697287.png?imageView2/2/w/1200/q/90</string>
+		<key>gridTitle</key>
+		<string>宝箱</string>
+	</dict>
+	<dict>
+		<key>iconImage</key>
+		<string>http://mp5.jmstatic.com/mobile/card_material/item_5628_160_160-ipad2048_1493029110.png?imageView2/2/w/1200/q/90</string>
+		<key>gridTitle</key>
+		<string>风尚</string>
+	</dict>
+	<dict>
+		<key>iconImage</key>
+		<string>http://mp5.jmstatic.com/mobile/card_material/item_3745_160_160-ipad2048_1493026834.png?imageView2/2/w/1200/q/90</string>
+		<key>gridTitle</key>
+		<string>饮品</string>
+	</dict>
+	<dict>
+		<key>iconImage</key>
+		<string>http://mp5.jmstatic.com/mobile/card_material/item_3745_160_160-ipad2048_1493026885.png?imageView2/2/w/1200/q/90</string>
+		<key>gridTitle</key>
+		<string>零食</string>
+	</dict>
+	<dict>
+		<key>iconImage</key>
+		<string>http://mp5.jmstatic.com/mobile/card_material/item_3745_160_160-ipad2048_1493026975.png?imageView2/2/w/1200/q/90</string>
+		<key>gridTitle</key>
+		<string>保健</string>
+	</dict>
+	<dict>
+		<key>iconImage</key>
+		<string>http://mp5.jmstatic.com/mobile/card_material/item_5628_160_160-ipad2048_1493028996.png?imageView2/2/w/1200/q/90</string>
+		<key>gridTitle</key>
+		<string>出行</string>
+	</dict>
+	<dict>
+		<key>iconImage</key>
+		<string>http://mp5.jmstatic.com/mobile/card_material/item_3745_160_160-ipad2048_1493026997.png?imageView2/2/w/1200/q/90</string>
+		<key>gridTitle</key>
+		<string>早餐</string>
+	</dict>
+</array>
+</plist>

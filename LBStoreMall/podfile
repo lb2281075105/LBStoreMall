@@ -6,4 +6,8 @@ target 'LBStoreMall' do
 
 pod 'ZYCornerRadius'
 pod 'ZXingObjC'
+pod 'SVProgressHUD'
+pod 'MJExtension'
+pod 'MJRefresh'
+pod 'Masonry'
 end

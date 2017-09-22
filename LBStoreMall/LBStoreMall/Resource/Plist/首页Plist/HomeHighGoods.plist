@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>goods_address</key>
+		<string>江苏 南京</string>
+		<key>sale_count</key>
+		<string>222</string>
+		<key>expressage</key>
+		<string>20</string>
+		<key>goods_title</key>
+		<string>苹果SE</string>
+		<key>image_url</key>
+		<string>http://gfs.gomein.net.cn/T1WkxTB7Dv1RCvBVdK_400.jpg</string>
+		<key>price</key>
+		<integer>2588</integer>
+		<key>sales</key>
+		<integer>223</integer>
+		<key>main_title</key>
+		<string>Apple iPhone SE 玫瑰金16G 4G手机（全网通）</string>
+		<key>stock</key>
+		<integer>444</integer>
+	</dict>
+	<dict>
+		<key>goods_address</key>
+		<string>江苏 南京</string>
+		<key>sale_count</key>
+		<string>222</string>
+		<key>expressage</key>
+		<string>20</string>
+		<key>goods_title</key>
+		<string>小米手机</string>
+		<key>image_url</key>
+		<string>http://gfs14.gomein.net.cn/T1bSxTBjEb1RCvBVdK_400.jpg</string>
+		<key>price</key>
+		<integer>1299</integer>
+		<key>sales</key>
+		<integer>3234</integer>
+		<key>main_title</key>
+		<string>小米（MI）红米Note4X 高配版 手机 4G+64G 磨砂黑</string>
+		<key>stock</key>
+		<integer>233</integer>
+	</dict>
+	<dict>
+		<key>goods_address</key>
+		<string>江苏 南京</string>
+		<key>sale_count</key>
+		<string>222</string>
+		<key>expressage</key>
+		<string>20</string>
+		<key>goods_title</key>
+		<string>苹果6sP</string>
+		<key>image_url</key>
+		<string>http://gfs.gomein.net.cn/T1tZbvBTDT1RCvBVdK_400.jpg</string>
+		<key>price</key>
+		<integer>2500</integer>
+		<key>sales</key>
+		<integer>332</integer>
+		<key>main_title</key>
+		<string>apple/苹果6sP Iphone6s Plus全网通 全网通4G手机（土豪金）</string>
+		<key>stock</key>
+		<integer>233</integer>
+	</dict>
+	<dict>
+		<key>goods_address</key>
+		<string>北京</string>
+		<key>sale_count</key>
+		<string>222</string>
+		<key>expressage</key>
+		<string>20</string>
+		<key>goods_title</key>
+		<string>电风扇</string>
+		<key>image_url</key>
+		<string>http://gfs12.gomein.net.cn/T1SPATByK_1RCvBVdK_400.jpg</string>
+		<key>price</key>
+		<integer>219</integer>
+		<key>sales</key>
+		<real>4444</real>
+		<key>main_title</key>
+		<string>美的（Midea）落地扇 FS40-13ER （5片AS航空扇叶，7.5小时定时）</string>
+		<key>stock</key>
+		<integer>233</integer>
+	</dict>
+	<dict>
+		<key>goods_address</key>
+		<string>江苏 南京</string>
+		<key>sale_count</key>
+		<string>3424</string>
+		<key>expressage</key>
+		<string>34</string>
+		<key>goods_title</key>
+		<string>充电宝</string>
+		<key>image_url</key>
+		<string>http://gfs.gomein.net.cn/T1CVLTBbhT1RCvBVdK_400.jpg</string>
+		<key>price</key>
+		<integer>49</integer>
+		<key>sales</key>
+		<real>4444</real>
+		<key>main_title</key>
+		<string>大力士（Dails）E22 21000AH 聚合移动电源 自带线 双口 </string>
+		<key>stock</key>
+		<integer>3242</integer>
+	</dict>
+	<dict>
+		<key>goods_address</key>
+		<string>江苏 南京</string>
+		<key>sale_count</key>
+		<string>222</string>
+		<key>expressage</key>
+		<string>20</string>
+		<key>goods_title</key>
+		<string>国美手机</string>
+		<key>image_url</key>
+		<string>http://gfs14.gomein.net.cn/T1bThTB5ZQ1RCvBVdK_400.jpg</string>
+		<key>price</key>
+		<integer>2699</integer>
+		<key>sales</key>
+		<real>4444</real>
+		<key>main_title</key>
+		<string>国美（GOME）K1 4GB + 64G 移动联通电信手机 虹膜解锁</string>
+		<key>stock</key>
+		<integer>233</integer>
+	</dict>
+	<dict>
+		<key>goods_address</key>
+		<string>江苏 南京</string>
+		<key>sale_count</key>
+		<string>333</string>
+		<key>expressage</key>
+		<string>23</string>
+		<key>goods_title</key>
+		<string>苹果6P</string>
+		<key>image_url</key>
+		<string>http://gfs14.gomein.net.cn/T1hTJTBvAj1RCvBVdK_400.jpg</string>
+		<key>price</key>
+		<integer>2000</integer>
+		<key>sales</key>
+		<integer>323</integer>
+		<key>main_title</key>
+		<string>苹果（Apple Iphone 6P）金色全网通</string>
+		<key>stock</key>
+		<integer>233</integer>
+	</dict>
+	<dict>
+		<key>goods_address</key>
+		<string>江苏 苏州</string>
+		<key>sale_count</key>
+		<string>12312</string>
+		<key>expressage</key>
+		<string>10</string>
+		<key>goods_title</key>
+		<string>耐克</string>
+		<key>image_url</key>
+		<string>http://gfs1.gomein.net.cn/T1w1WTB7Vv1RCvBVdK_400.jpg</string>
+		<key>price</key>
+		<integer>298</integer>
+		<key>sales</key>
+		<integer>213</integer>
+		<key>main_title</key>
+		<string>耐克NIKE Roshe Run 伦敦男子网面超轻透气跑鞋 运动鞋511882</string>
+		<key>stock</key>
+		<integer>2131</integer>
+	</dict>
+	<dict>
+		<key>goods_address</key>
+		<string>江苏 苏州</string>
+		<key>sale_count</key>
+		<string>12312</string>
+		<key>expressage</key>
+		<string>10</string>
+		<key>goods_title</key>
+		<string>手机</string>
+		<key>image_url</key>
+		<string>http://gfs14.gomein.net.cn/T1EKKTBjJv1RCvBVdK_400.jpg</string>
+		<key>price</key>
+		<integer>3599</integer>
+		<key>sales</key>
+		<integer>213</integer>
+		<key>main_title</key>
+		<string>华为 HUAWEI Mate9 全网通版 摩卡金</string>
+		<key>stock</key>
+		<integer>2131</integer>
+	</dict>
+	<dict>
+		<key>goods_address</key>
+		<string>江苏 苏州</string>
+		<key>sale_count</key>
+		<string>12312</string>
+		<key>expressage</key>
+		<string>10</string>
+		<key>goods_title</key>
+		<string>手机</string>
+		<key>image_url</key>
+		<string>http://gfs14.gomein.net.cn/T1GIKTBbhT1RCvBVdK_400.jpg</string>
+		<key>price</key>
+		<integer>2999</integer>
+		<key>sales</key>
+		<integer>213</integer>
+		<key>main_title</key>
+		<string>荣耀 （honor）V9 全网通 （极光蓝）</string>
+		<key>stock</key>
+		<integer>2131</integer>
+	</dict>
+</array>
+</plist>

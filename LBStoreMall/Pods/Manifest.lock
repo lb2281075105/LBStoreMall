@@ -1,17 +1,29 @@
 PODS:
+  - Masonry (1.0.2)
+  - MJExtension (3.0.13)
+  - MJRefresh (3.1.12)
+  - SVProgressHUD (2.1.2)
   - ZXingObjC (3.2.1):
     - ZXingObjC/All (= 3.2.1)
   - ZXingObjC/All (3.2.1)
   - ZYCornerRadius (1.0.2)
 
 DEPENDENCIES:
+  - Masonry
+  - MJExtension
+  - MJRefresh
+  - SVProgressHUD
   - ZXingObjC
   - ZYCornerRadius
 
 SPEC CHECKSUMS:
+  Masonry: 7c429b56da9d4ee0bbb3ed77a5ea710d6a5df39e
+  MJExtension: 5932755f451458eefa24239358817f8d291240c7
+  MJRefresh: b96cdb21c4aa75a7b07654311ab2f315c497e806
+  SVProgressHUD: c404a55d78acbeb7ebb78b76d3faf986475a6994
   ZXingObjC: bbf7b8f0cf8933fdd33eb4f9f46e22308552869b
   ZYCornerRadius: f0af817be7805b5c63d793042ca7a03f81e14069
 
-PODFILE CHECKSUM: b12f32a7c4be1e4e4532f3607f2831eff01af90f
+PODFILE CHECKSUM: da86d0db6f6c63453205e345bbe4d2b021f87a1c
 
 COCOAPODS: 1.2.1

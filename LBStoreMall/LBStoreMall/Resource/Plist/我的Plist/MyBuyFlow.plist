@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>flow_title</key>
+		<string>待支付</string>
+		<key>flowImageView</key>
+		<string>wdgm_icon_daizhifu</string>
+	</dict>
+	<dict>
+		<key>flow_title</key>
+		<string>待收货</string>
+		<key>flowImageView</key>
+		<string>wdgm_icon_daishouhuo</string>
+	</dict>
+	<dict>
+		<key>flow_title</key>
+		<string>待评价</string>
+		<key>flowImageView</key>
+		<string>wdgm_icon_daipingjia</string>
+	</dict>
+	<dict>
+		<key>flow_title</key>
+		<string>退款/售后</string>
+		<key>flowImageView</key>
+		<string>wdgm_icon_tuikuan</string>
+	</dict>
+	<dict>
+		<key>flow_title</key>
+		<string>待支付</string>
+		<key>flowImageView</key>
+		<string>quanbudindan</string>
+	</dict>
+</array>
+</plist>
