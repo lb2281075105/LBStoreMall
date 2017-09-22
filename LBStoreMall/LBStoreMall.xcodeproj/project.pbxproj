@@ -80,6 +80,7 @@
 		F8A9908C1F74E19E00C2592B /* LBSMSearchTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = F8A9908B1F74E19E00C2592B /* LBSMSearchTextField.m */; };
 		F8A990911F74FF2500C2592B /* LBSMHomeGrid.m in Sources */ = {isa = PBXBuildFile; fileRef = F8A990901F74FF2500C2592B /* LBSMHomeGrid.m */; };
 		F8A990971F7501C700C2592B /* LBSMHomeGridCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F8A990961F7501C700C2592B /* LBSMHomeGridCell.m */; };
+		F8A9909B1F750EBE00C2592B /* LBSMSlideshowHeadView.m in Sources */ = {isa = PBXBuildFile; fileRef = F8A9909A1F750EBE00C2592B /* LBSMSlideshowHeadView.m */; };
 		F94E060C399C91F075D61321 /* libPods-LBStoreMall.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A304A683BFA9B931C1ECDFC9 /* libPods-LBStoreMall.a */; };
 /* End PBXBuildFile section */
 
@@ -233,6 +234,8 @@
 		F8A990901F74FF2500C2592B /* LBSMHomeGrid.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LBSMHomeGrid.m; sourceTree = "<group>"; };
 		F8A990951F7501C700C2592B /* LBSMHomeGridCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LBSMHomeGridCell.h; sourceTree = "<group>"; };
 		F8A990961F7501C700C2592B /* LBSMHomeGridCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LBSMHomeGridCell.m; sourceTree = "<group>"; };
+		F8A990991F750EBE00C2592B /* LBSMSlideshowHeadView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LBSMSlideshowHeadView.h; sourceTree = "<group>"; };
+		F8A9909A1F750EBE00C2592B /* LBSMSlideshowHeadView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LBSMSlideshowHeadView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -698,6 +701,7 @@
 		F8A9908D1F74FEDE00C2592B /* home */ = {
 			isa = PBXGroup;
 			children = (
+				F8A990981F750E8A00C2592B /* sliderView */,
 				F8A990951F7501C700C2592B /* LBSMHomeGridCell.h */,
 				F8A990961F7501C700C2592B /* LBSMHomeGridCell.m */,
 			);
@@ -711,6 +715,15 @@
 				F8A990901F74FF2500C2592B /* LBSMHomeGrid.m */,
 			);
 			path = home;
+			sourceTree = "<group>";
+		};
+		F8A990981F750E8A00C2592B /* sliderView */ = {
+			isa = PBXGroup;
+			children = (
+				F8A990991F750EBE00C2592B /* LBSMSlideshowHeadView.h */,
+				F8A9909A1F750EBE00C2592B /* LBSMSlideshowHeadView.m */,
+			);
+			path = sliderView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -954,6 +967,7 @@
 				F8A990391F74A71300C2592B /* LBXScanViewStyle.m in Sources */,
 				3AA90C631F651B2B00048C39 /* UIScreen+CZAddition.m in Sources */,
 				F87B43D41F67D56A005ED2BC /* LBSMMineController.m in Sources */,
+				F8A9909B1F750EBE00C2592B /* LBSMSlideshowHeadView.m in Sources */,
 				3AA90C651F651B2B00048C39 /* UIViewController+CZAddition.m in Sources */,
 				F8A990411F74A71300C2592B /* SubLBXScanViewController.m in Sources */,
 				3AA90C5C1F651B2B00048C39 /* NSObject+CZRuntime.m in Sources */,

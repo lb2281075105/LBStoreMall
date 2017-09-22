@@ -13,6 +13,7 @@
 #import "LBSMSearchTextField.h"
 #import "LBSMHomeGrid.h"
 #import "LBSMHomeGridCell.h"
+#import "LBSMSlideshowHeadView.h"
 @interface LBSMHomeController ()<UICollectionViewDataSource, UICollectionViewDelegateFlowLayout>
 /// 滑动视图
 @property (strong , nonatomic)UICollectionView *collectionView;
@@ -26,7 +27,7 @@
 static NSString *const HomeGridCell = @"LBSMHomeGridCell";
 static NSString *const DCExceedApplianceCellID = @"DCExceedApplianceCell";
 /* head */
-static NSString *const DCSlideshowHeadViewID = @"DCSlideshowHeadView";
+static NSString *const SlideshowHeadView = @"LBSMSlideshowHeadView";
 
 /* foot */
 static NSString *const DCTopLineFootViewID = @"DCTopLineFootView";
@@ -174,7 +175,36 @@ static NSString *const DCTopLineFootViewID = @"DCTopLineFootView";
 - (CGFloat)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout minimumLineSpacingForSectionAtIndex:(NSInteger)section {
     return (section == 4) ? 4 : 0;
 }
-
+/// 组头视图、尾视图
+- (UICollectionReusableView *)collectionView:(UICollectionView *)collectionView viewForSupplementaryElementOfKind:(NSString *)kind atIndexPath:(NSIndexPath *)indexPath {
+    
+    UICollectionReusableView *reusableview = nil;
+    
+    if (kind == UICollectionElementKindSectionHeader){
+        if (indexPath.section == 0) {
+            LBSMSlideshowHeadView *headerView = [collectionView dequeueReusableSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:SlideshowHeadView forIndexPath:indexPath];
+            reusableview = headerView;
+        }
+//        }else if (indexPath.section == 1){
+//            DCCountDownHeadView *headerView = [collectionView dequeueReusableSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:DCCountDownHeadViewID forIndexPath:indexPath];
+//            reusableview = headerView;
+//        }else if (indexPath.section == 3){
+//            DCYouLikeHeadView *headerView = [collectionView dequeueReusableSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:DCYouLikeHeadViewID forIndexPath:indexPath];
+//            [headerView.likeButton setTitle:@"品牌精选" forState:UIControlStateNormal];
+//            [headerView.likeButton setTitleColor:RGB(77, 171, 21) forState:UIControlStateNormal];
+//            [headerView.likeButton setImage:[UIImage imageNamed:@"shouye_icon03"] forState:UIControlStateNormal];
+//            reusableview = headerView;
+//        }else if (indexPath.section == 4){
+//            DCYouLikeHeadView *headerView = [collectionView dequeueReusableSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:DCYouLikeHeadViewID forIndexPath:indexPath];
+//            [headerView.likeButton setTitle:@"热门推荐" forState:UIControlStateNormal];
+//            [headerView.likeButton setTitleColor:RGB(14, 122, 241) forState:UIControlStateNormal];
+//            [headerView.likeButton setImage:[UIImage imageNamed:@"shouye_icon02"] forState:UIControlStateNormal];
+//            reusableview = headerView;
+//        }
+        
+    }
+    return reusableview;
+}
 /// 设置导航
 - (void)setUpNav{
 
