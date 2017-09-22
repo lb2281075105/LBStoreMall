@@ -10,4 +10,5 @@ pod 'SVProgressHUD'
 pod 'MJExtension'
 pod 'MJRefresh'
 pod 'Masonry'
+pod 'SVProgressHUD'
 end
