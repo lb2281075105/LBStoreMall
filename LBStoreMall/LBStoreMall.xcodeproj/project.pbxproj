@@ -80,7 +80,10 @@
 		F8A9908C1F74E19E00C2592B /* LBSMSearchTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = F8A9908B1F74E19E00C2592B /* LBSMSearchTextField.m */; };
 		F8A990911F74FF2500C2592B /* LBSMHomeGrid.m in Sources */ = {isa = PBXBuildFile; fileRef = F8A990901F74FF2500C2592B /* LBSMHomeGrid.m */; };
 		F8A990971F7501C700C2592B /* LBSMHomeGridCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F8A990961F7501C700C2592B /* LBSMHomeGridCell.m */; };
-		F8A9909B1F750EBE00C2592B /* LBSMSlideshowHeadView.m in Sources */ = {isa = PBXBuildFile; fileRef = F8A9909A1F750EBE00C2592B /* LBSMSlideshowHeadView.m */; };
+		F8A9909F1F7510E300C2592B /* UIView+DCExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = F8A9909E1F7510E300C2592B /* UIView+DCExtension.m */; };
+		F8A990A31F75128200C2592B /* LBSMSlideshowHeadView.m in Sources */ = {isa = PBXBuildFile; fileRef = F8A990A21F75128200C2592B /* LBSMSlideshowHeadView.m */; };
+		F8A990A61F7512C300C2592B /* LBSMTopFooterView.m in Sources */ = {isa = PBXBuildFile; fileRef = F8A990A51F7512C300C2592B /* LBSMTopFooterView.m */; };
+		F8A990AA1F75146500C2592B /* DCNumericalScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = F8A990A91F75146500C2592B /* DCNumericalScrollView.m */; };
 		F94E060C399C91F075D61321 /* libPods-LBStoreMall.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A304A683BFA9B931C1ECDFC9 /* libPods-LBStoreMall.a */; };
 /* End PBXBuildFile section */
 
@@ -234,8 +237,14 @@
 		F8A990901F74FF2500C2592B /* LBSMHomeGrid.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LBSMHomeGrid.m; sourceTree = "<group>"; };
 		F8A990951F7501C700C2592B /* LBSMHomeGridCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LBSMHomeGridCell.h; sourceTree = "<group>"; };
 		F8A990961F7501C700C2592B /* LBSMHomeGridCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LBSMHomeGridCell.m; sourceTree = "<group>"; };
-		F8A990991F750EBE00C2592B /* LBSMSlideshowHeadView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LBSMSlideshowHeadView.h; sourceTree = "<group>"; };
-		F8A9909A1F750EBE00C2592B /* LBSMSlideshowHeadView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LBSMSlideshowHeadView.m; sourceTree = "<group>"; };
+		F8A9909D1F7510E300C2592B /* UIView+DCExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+DCExtension.h"; sourceTree = "<group>"; };
+		F8A9909E1F7510E300C2592B /* UIView+DCExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+DCExtension.m"; sourceTree = "<group>"; };
+		F8A990A11F75128200C2592B /* LBSMSlideshowHeadView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LBSMSlideshowHeadView.h; sourceTree = "<group>"; };
+		F8A990A21F75128200C2592B /* LBSMSlideshowHeadView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LBSMSlideshowHeadView.m; sourceTree = "<group>"; };
+		F8A990A41F7512C300C2592B /* LBSMTopFooterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LBSMTopFooterView.h; sourceTree = "<group>"; };
+		F8A990A51F7512C300C2592B /* LBSMTopFooterView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LBSMTopFooterView.m; sourceTree = "<group>"; };
+		F8A990A81F75146500C2592B /* DCNumericalScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCNumericalScrollView.h; sourceTree = "<group>"; };
+		F8A990A91F75146500C2592B /* DCNumericalScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCNumericalScrollView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -289,6 +298,8 @@
 		3AA90C391F651B0B00048C39 /* common */ = {
 			isa = PBXGroup;
 			children = (
+				F8A990A71F75146500C2592B /* DCNumericalScrollView */,
+				F8A9909C1F7510E300C2592B /* UIView+DCExtension */,
 				F8A990091F74A71300C2592B /* RichScan */,
 				F8A990021F74A5A400C2592B /* UIBarButtonItem+LBBarButtonItem */,
 				F8A98FFE1F749AB300C2592B /* GQGesVCTransition */,
@@ -701,7 +712,7 @@
 		F8A9908D1F74FEDE00C2592B /* home */ = {
 			isa = PBXGroup;
 			children = (
-				F8A990981F750E8A00C2592B /* sliderView */,
+				F8A990A01F75128200C2592B /* 第0组 */,
 				F8A990951F7501C700C2592B /* LBSMHomeGridCell.h */,
 				F8A990961F7501C700C2592B /* LBSMHomeGridCell.m */,
 			);
@@ -717,13 +728,33 @@
 			path = home;
 			sourceTree = "<group>";
 		};
-		F8A990981F750E8A00C2592B /* sliderView */ = {
+		F8A9909C1F7510E300C2592B /* UIView+DCExtension */ = {
 			isa = PBXGroup;
 			children = (
-				F8A990991F750EBE00C2592B /* LBSMSlideshowHeadView.h */,
-				F8A9909A1F750EBE00C2592B /* LBSMSlideshowHeadView.m */,
+				F8A9909D1F7510E300C2592B /* UIView+DCExtension.h */,
+				F8A9909E1F7510E300C2592B /* UIView+DCExtension.m */,
 			);
-			path = sliderView;
+			path = "UIView+DCExtension";
+			sourceTree = "<group>";
+		};
+		F8A990A01F75128200C2592B /* 第0组 */ = {
+			isa = PBXGroup;
+			children = (
+				F8A990A11F75128200C2592B /* LBSMSlideshowHeadView.h */,
+				F8A990A21F75128200C2592B /* LBSMSlideshowHeadView.m */,
+				F8A990A41F7512C300C2592B /* LBSMTopFooterView.h */,
+				F8A990A51F7512C300C2592B /* LBSMTopFooterView.m */,
+			);
+			path = "第0组";
+			sourceTree = "<group>";
+		};
+		F8A990A71F75146500C2592B /* DCNumericalScrollView */ = {
+			isa = PBXGroup;
+			children = (
+				F8A990A81F75146500C2592B /* DCNumericalScrollView.h */,
+				F8A990A91F75146500C2592B /* DCNumericalScrollView.m */,
+			);
+			path = DCNumericalScrollView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -951,12 +982,15 @@
 				F8A990471F74A93300C2592B /* LBSMMessageController.m in Sources */,
 				F87B43BF1F678726005ED2BC /* LBSMNavController.m in Sources */,
 				F8A9908C1F74E19E00C2592B /* LBSMSearchTextField.m in Sources */,
+				F8A990A61F7512C300C2592B /* LBSMTopFooterView.m in Sources */,
 				3AA90C5B1F651B2B00048C39 /* NSAttributedString+CZAdditon.m in Sources */,
 				3AA90C641F651B2B00048C39 /* UIView+CZAddition.m in Sources */,
 				F8A9903E1F74A71300C2592B /* MyQRViewController.m in Sources */,
 				F8A990421F74A71300C2592B /* UIActionSheet+LBXAlertAction.m in Sources */,
+				F8A990A31F75128200C2592B /* LBSMSlideshowHeadView.m in Sources */,
 				F87B43CE1F67D541005ED2BC /* LBSMClassifyController.m in Sources */,
 				F8A9903F1F74A71300C2592B /* ScanResultViewController.m in Sources */,
+				F8A9909F1F7510E300C2592B /* UIView+DCExtension.m in Sources */,
 				3AA90C6A1F651CB900048C39 /* AppDelegate.m in Sources */,
 				F8A990011F749AB300C2592B /* GQGesVCTransition.m in Sources */,
 				F8A9903C1F74A71300C2592B /* ZXingWrapper.m in Sources */,
@@ -967,9 +1001,9 @@
 				F8A990391F74A71300C2592B /* LBXScanViewStyle.m in Sources */,
 				3AA90C631F651B2B00048C39 /* UIScreen+CZAddition.m in Sources */,
 				F87B43D41F67D56A005ED2BC /* LBSMMineController.m in Sources */,
-				F8A9909B1F750EBE00C2592B /* LBSMSlideshowHeadView.m in Sources */,
 				3AA90C651F651B2B00048C39 /* UIViewController+CZAddition.m in Sources */,
 				F8A990411F74A71300C2592B /* SubLBXScanViewController.m in Sources */,
+				F8A990AA1F75146500C2592B /* DCNumericalScrollView.m in Sources */,
 				3AA90C5C1F651B2B00048C39 /* NSObject+CZRuntime.m in Sources */,
 				F8A9903A1F74A71300C2592B /* LBXScanWrapper.m in Sources */,
 				F8A990381F74A71300C2592B /* LBXScanViewController.m in Sources */,

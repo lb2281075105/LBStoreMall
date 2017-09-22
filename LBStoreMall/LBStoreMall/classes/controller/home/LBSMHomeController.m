@@ -14,6 +14,7 @@
 #import "LBSMHomeGrid.h"
 #import "LBSMHomeGridCell.h"
 #import "LBSMSlideshowHeadView.h"
+#import "LBSMTopFooterView.h"
 @interface LBSMHomeController ()<UICollectionViewDataSource, UICollectionViewDelegateFlowLayout>
 /// 滑动视图
 @property (strong , nonatomic)UICollectionView *collectionView;
@@ -30,7 +31,7 @@ static NSString *const DCExceedApplianceCellID = @"DCExceedApplianceCell";
 static NSString *const SlideshowHeadView = @"LBSMSlideshowHeadView";
 
 /* foot */
-static NSString *const DCTopLineFootViewID = @"DCTopLineFootView";
+static NSString *const TopFooterView = @"LBSMTopFooterView";
 
 @implementation LBSMHomeController
 
@@ -47,10 +48,12 @@ static NSString *const DCTopLineFootViewID = @"DCTopLineFootView";
         [_collectionView registerClass:[LBSMHomeGridCell class] forCellWithReuseIdentifier:HomeGridCell];
 
         /// header
+        [_collectionView registerClass:[LBSMSlideshowHeadView class] forSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:SlideshowHeadView];
         
         
         /// footer
-        
+        [_collectionView registerClass:[LBSMTopFooterView class] forSupplementaryViewOfKind:UICollectionElementKindSectionFooter withReuseIdentifier:TopFooterView];
+
         
         [self.view addSubview:_collectionView];
     }
@@ -203,7 +206,47 @@ static NSString *const DCTopLineFootViewID = @"DCTopLineFootView";
 //        }
         
     }
+    
+    if (kind == UICollectionElementKindSectionFooter) {
+        if (indexPath.section == 0) {
+            LBSMTopFooterView *footview = [collectionView dequeueReusableSupplementaryViewOfKind:UICollectionElementKindSectionFooter withReuseIdentifier:TopFooterView forIndexPath:indexPath];
+            reusableview = footview;
+        }
+//        }else if (indexPath.section == 2){
+//            DCScrollAdFootView *footerView = [collectionView dequeueReusableSupplementaryViewOfKind:UICollectionElementKindSectionFooter withReuseIdentifier:DCScrollAdFootViewID forIndexPath:indexPath];
+//            reusableview = footerView;
+//        }else if (indexPath.section == 4) {
+//            DCOverFootView *footview = [collectionView dequeueReusableSupplementaryViewOfKind:UICollectionElementKindSectionFooter withReuseIdentifier:DCOverFootViewID forIndexPath:indexPath];
+//            reusableview = footview;
+//        }
+    }
     return reusableview;
+}
+/// head宽高
+- (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout*)collectionViewLayout referenceSizeForHeaderInSection:(NSInteger)section {
+    
+    if (section == 0) {
+        /// 图片滚动的宽高
+        return CGSizeMake([UIScreen cz_screenWidth], 150);
+    }
+//    if (section == 1 ||section == 3 || section == 4) {//猜你喜欢的宽高
+//        return CGSizeMake(ScreenW, 40);  //推荐适合的宽高
+//    }
+    return CGSizeZero;
+}
+/// foot宽高
+- (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout*)collectionViewLayout referenceSizeForFooterInSection:(NSInteger)section {
+    if (section == 0) {
+        /// Top头条的宽高
+        return CGSizeMake([UIScreen cz_screenWidth], 60);
+    }
+//    if (section == 2) {
+//        return CGSizeMake(ScreenW, 80); // 滚动广告
+//    }
+//    if (section == 4) {
+//        return CGSizeMake(ScreenW, 40); // 结束
+//    }
+    return CGSizeZero;
 }
 /// 设置导航
 - (void)setUpNav{

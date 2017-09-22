@@ -17,7 +17,6 @@
 -(void)setHomeGrid:(LBSMHomeGrid *)homeGrid{
 
     _homeGrid = homeGrid;
-    NSLog(@"%@",homeGrid.iconImage);
     [_gridImageView sd_setImageWithURL:[NSURL URLWithString:homeGrid.iconImage]];
     _gridLabel.text = homeGrid.gridTitle;
 }

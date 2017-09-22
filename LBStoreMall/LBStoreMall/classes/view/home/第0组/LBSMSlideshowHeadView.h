@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface LBSMSlideshowHeadView : UICollectionReusableView
+@interface LBSMSlideshowHeadView : UICollectionReusableView<SDCycleScrollViewDelegate>
 
 @end
