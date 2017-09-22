@@ -15,6 +15,8 @@
 #import "LBSMHomeGridCell.h"
 #import "LBSMSlideshowHeadView.h"
 #import "LBSMTopFooterView.h"
+#import "LBSMHaoHuoHeadView.h"
+#import "LBSMHaoHuoCell.h"
 @interface LBSMHomeController ()<UICollectionViewDataSource, UICollectionViewDelegateFlowLayout>
 /// 滑动视图
 @property (strong , nonatomic)UICollectionView *collectionView;
@@ -24,13 +26,13 @@
 @property (strong , nonatomic)NSMutableArray *homeGridArray;
 
 @end
-//// cell
+/// cell
 static NSString *const HomeGridCell = @"LBSMHomeGridCell";
-static NSString *const DCExceedApplianceCellID = @"DCExceedApplianceCell";
-/* head */
+static NSString *const HaoHuoCell = @"LBSMHaoHuoCell";
+/// head
 static NSString *const SlideshowHeadView = @"LBSMSlideshowHeadView";
-
-/* foot */
+static NSString *const HaoHuoHeadView = @"LBSMHaoHuoHeadView";
+/// foot
 static NSString *const TopFooterView = @"LBSMTopFooterView";
 
 @implementation LBSMHomeController
@@ -40,15 +42,18 @@ static NSString *const TopFooterView = @"LBSMTopFooterView";
     if (_collectionView == nil) {
         UICollectionViewFlowLayout *layout = [[UICollectionViewFlowLayout alloc]init];
         _collectionView = [[UICollectionView alloc]initWithFrame:CGRectZero collectionViewLayout:layout];
+        /// 不用设置集合视图的具体frame
+        /// 需要时设置滑动方向
         _collectionView.frame = CGRectMake(0, 64, [UIScreen cz_screenWidth], [UIScreen cz_screenHeight] - 64 - 49);
         _collectionView.showsVerticalScrollIndicator = NO;
         _collectionView.delegate = self;
         _collectionView.dataSource = self;
         /// cell九宫格
         [_collectionView registerClass:[LBSMHomeGridCell class] forCellWithReuseIdentifier:HomeGridCell];
-
+        [_collectionView registerClass:[LBSMHaoHuoCell class] forCellWithReuseIdentifier:HaoHuoCell];
         /// header
         [_collectionView registerClass:[LBSMSlideshowHeadView class] forSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:SlideshowHeadView];
+        [_collectionView registerClass:[LBSMHaoHuoHeadView class] forSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:HaoHuoHeadView];
         
         
         /// footer
@@ -107,19 +112,21 @@ static NSString *const TopFooterView = @"LBSMTopFooterView";
 - (void)addJiuGrid{
 
     _homeGridArray = [LBSMHomeGrid mj_objectArrayWithFilename:@"GoodsGrid.plist"];
-    [self.collectionView reloadData];
+//    [self.collectionView reloadData];
 }
 /// 代理
 - (NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView {
     return 5;
 }
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
-    if (section == 0) { //10属性
+    if (section == 0) {
+        /// 九宫格
         return _homeGridArray.count;
     }
-//    if (section == 1) { //倒计时
-//        return 1;
-//    }
+    if (section == 1) {
+        /// 好货秒抢
+        return 1;
+    }
 //    if (section == 2) { //掌上专享
 //        return 1;
 //    }
@@ -132,23 +139,31 @@ static NSString *const TopFooterView = @"LBSMTopFooterView";
     return 0;
 }
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
-    UICollectionViewCell *gridcell = nil;
-    if (indexPath.section == 0) {//10
+    UICollectionViewCell *collectionViewcell = nil;
+    if (indexPath.section == 0) {
+        /// 九宫格
         LBSMHomeGridCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:HomeGridCell forIndexPath:indexPath];
         cell.homeGrid = _homeGridArray[indexPath.row];
         cell.backgroundColor = [UIColor whiteColor];
-        gridcell = cell;
+        collectionViewcell = cell;
+    }else if (indexPath.section == 1) {
+        /// 好货秒抢
+        LBSMHaoHuoCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:HaoHuoCell forIndexPath:indexPath];
+        collectionViewcell = cell;
     }
+    
  
-    return gridcell;
+    return collectionViewcell;
 }
 - (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath {
-    if (indexPath.section == 0) {//9宫格组
+    if (indexPath.section == 0) {
+        /// 九宫格组
         return CGSizeMake([UIScreen cz_screenWidth]/5 , [UIScreen cz_screenWidth]/5 + 10);
     }
-//    if (indexPath.section == 1) {//计时
-//        return CGSizeMake(ScreenW, 150);
-//    }
+    if (indexPath.section == 1) {
+        /// 好货秒抢
+        return CGSizeMake([UIScreen cz_screenWidth], 150);
+    }
 //    if (indexPath.section == 2) {//掌上
 //        return CGSizeMake(ScreenW,ScreenW * 0.35 + 120);
 //    }
@@ -187,10 +202,10 @@ static NSString *const TopFooterView = @"LBSMTopFooterView";
         if (indexPath.section == 0) {
             LBSMSlideshowHeadView *headerView = [collectionView dequeueReusableSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:SlideshowHeadView forIndexPath:indexPath];
             reusableview = headerView;
+        }else if (indexPath.section == 1){
+            LBSMHaoHuoHeadView *headerView = [collectionView dequeueReusableSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:HaoHuoHeadView forIndexPath:indexPath];
+            reusableview = headerView;
         }
-//        }else if (indexPath.section == 1){
-//            DCCountDownHeadView *headerView = [collectionView dequeueReusableSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:DCCountDownHeadViewID forIndexPath:indexPath];
-//            reusableview = headerView;
 //        }else if (indexPath.section == 3){
 //            DCYouLikeHeadView *headerView = [collectionView dequeueReusableSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:DCYouLikeHeadViewID forIndexPath:indexPath];
 //            [headerView.likeButton setTitle:@"品牌精选" forState:UIControlStateNormal];
@@ -229,9 +244,11 @@ static NSString *const TopFooterView = @"LBSMTopFooterView";
         /// 图片滚动的宽高
         return CGSizeMake([UIScreen cz_screenWidth], 150);
     }
-//    if (section == 1 ||section == 3 || section == 4) {//猜你喜欢的宽高
-//        return CGSizeMake(ScreenW, 40);  //推荐适合的宽高
-//    }
+    if (section == 1 ||section == 3 || section == 4) {
+        /// 猜你喜欢的宽高
+        /// 推荐适合的宽高
+        return CGSizeMake([UIScreen cz_screenWidth], 40);
+    }
     return CGSizeZero;
 }
 /// foot宽高

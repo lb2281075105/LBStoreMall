@@ -79,11 +79,15 @@
 		F8A990821F74AF3800C2592B /* HomeHighGoods.plist in Resources */ = {isa = PBXBuildFile; fileRef = F8A9906E1F74AF3800C2592B /* HomeHighGoods.plist */; };
 		F8A9908C1F74E19E00C2592B /* LBSMSearchTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = F8A9908B1F74E19E00C2592B /* LBSMSearchTextField.m */; };
 		F8A990911F74FF2500C2592B /* LBSMHomeGrid.m in Sources */ = {isa = PBXBuildFile; fileRef = F8A990901F74FF2500C2592B /* LBSMHomeGrid.m */; };
-		F8A990971F7501C700C2592B /* LBSMHomeGridCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F8A990961F7501C700C2592B /* LBSMHomeGridCell.m */; };
 		F8A9909F1F7510E300C2592B /* UIView+DCExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = F8A9909E1F7510E300C2592B /* UIView+DCExtension.m */; };
 		F8A990A31F75128200C2592B /* LBSMSlideshowHeadView.m in Sources */ = {isa = PBXBuildFile; fileRef = F8A990A21F75128200C2592B /* LBSMSlideshowHeadView.m */; };
 		F8A990A61F7512C300C2592B /* LBSMTopFooterView.m in Sources */ = {isa = PBXBuildFile; fileRef = F8A990A51F7512C300C2592B /* LBSMTopFooterView.m */; };
 		F8A990AA1F75146500C2592B /* DCNumericalScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = F8A990A91F75146500C2592B /* DCNumericalScrollView.m */; };
+		F8A990B01F75181C00C2592B /* LBSMHaoHuoHeadView.m in Sources */ = {isa = PBXBuildFile; fileRef = F8A990AF1F75181C00C2592B /* LBSMHaoHuoHeadView.m */; };
+		F8A990B31F751A6300C2592B /* LBSMHomeGridCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F8A990B21F751A6300C2592B /* LBSMHomeGridCell.m */; };
+		F8A990B61F751A9300C2592B /* LBSMHaoHuoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F8A990B51F751A9300C2592B /* LBSMHaoHuoCell.m */; };
+		F8A990BE1F751ECD00C2592B /* LBSMHaoHuoGoodsCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F8A990BD1F751ECD00C2592B /* LBSMHaoHuoGoodsCell.m */; };
+		F8A990C11F75200100C2592B /* LBSMHaoHuoGoodsModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F8A990C01F75200100C2592B /* LBSMHaoHuoGoodsModel.m */; };
 		F94E060C399C91F075D61321 /* libPods-LBStoreMall.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A304A683BFA9B931C1ECDFC9 /* libPods-LBStoreMall.a */; };
 /* End PBXBuildFile section */
 
@@ -235,8 +239,6 @@
 		F8A9908B1F74E19E00C2592B /* LBSMSearchTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LBSMSearchTextField.m; sourceTree = "<group>"; };
 		F8A9908F1F74FF2500C2592B /* LBSMHomeGrid.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LBSMHomeGrid.h; sourceTree = "<group>"; };
 		F8A990901F74FF2500C2592B /* LBSMHomeGrid.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LBSMHomeGrid.m; sourceTree = "<group>"; };
-		F8A990951F7501C700C2592B /* LBSMHomeGridCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LBSMHomeGridCell.h; sourceTree = "<group>"; };
-		F8A990961F7501C700C2592B /* LBSMHomeGridCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LBSMHomeGridCell.m; sourceTree = "<group>"; };
 		F8A9909D1F7510E300C2592B /* UIView+DCExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+DCExtension.h"; sourceTree = "<group>"; };
 		F8A9909E1F7510E300C2592B /* UIView+DCExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+DCExtension.m"; sourceTree = "<group>"; };
 		F8A990A11F75128200C2592B /* LBSMSlideshowHeadView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LBSMSlideshowHeadView.h; sourceTree = "<group>"; };
@@ -245,6 +247,16 @@
 		F8A990A51F7512C300C2592B /* LBSMTopFooterView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LBSMTopFooterView.m; sourceTree = "<group>"; };
 		F8A990A81F75146500C2592B /* DCNumericalScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCNumericalScrollView.h; sourceTree = "<group>"; };
 		F8A990A91F75146500C2592B /* DCNumericalScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCNumericalScrollView.m; sourceTree = "<group>"; };
+		F8A990AE1F75181C00C2592B /* LBSMHaoHuoHeadView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LBSMHaoHuoHeadView.h; sourceTree = "<group>"; };
+		F8A990AF1F75181C00C2592B /* LBSMHaoHuoHeadView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LBSMHaoHuoHeadView.m; sourceTree = "<group>"; };
+		F8A990B11F751A6300C2592B /* LBSMHomeGridCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LBSMHomeGridCell.h; sourceTree = "<group>"; };
+		F8A990B21F751A6300C2592B /* LBSMHomeGridCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LBSMHomeGridCell.m; sourceTree = "<group>"; };
+		F8A990B41F751A9300C2592B /* LBSMHaoHuoCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LBSMHaoHuoCell.h; sourceTree = "<group>"; };
+		F8A990B51F751A9300C2592B /* LBSMHaoHuoCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LBSMHaoHuoCell.m; sourceTree = "<group>"; };
+		F8A990BC1F751ECD00C2592B /* LBSMHaoHuoGoodsCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LBSMHaoHuoGoodsCell.h; sourceTree = "<group>"; };
+		F8A990BD1F751ECD00C2592B /* LBSMHaoHuoGoodsCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LBSMHaoHuoGoodsCell.m; sourceTree = "<group>"; };
+		F8A990BF1F75200100C2592B /* LBSMHaoHuoGoodsModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LBSMHaoHuoGoodsModel.h; sourceTree = "<group>"; };
+		F8A990C01F75200100C2592B /* LBSMHaoHuoGoodsModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LBSMHaoHuoGoodsModel.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -712,9 +724,10 @@
 		F8A9908D1F74FEDE00C2592B /* home */ = {
 			isa = PBXGroup;
 			children = (
+				F8A990AB1F7517A000C2592B /* 第1组 */,
+				F8A990AC1F7517A000C2592B /* 第2组 */,
+				F8A990AD1F7517A000C2592B /* 第3组 */,
 				F8A990A01F75128200C2592B /* 第0组 */,
-				F8A990951F7501C700C2592B /* LBSMHomeGridCell.h */,
-				F8A990961F7501C700C2592B /* LBSMHomeGridCell.m */,
 			);
 			path = home;
 			sourceTree = "<group>";
@@ -724,6 +737,8 @@
 			children = (
 				F8A9908F1F74FF2500C2592B /* LBSMHomeGrid.h */,
 				F8A990901F74FF2500C2592B /* LBSMHomeGrid.m */,
+				F8A990BF1F75200100C2592B /* LBSMHaoHuoGoodsModel.h */,
+				F8A990C01F75200100C2592B /* LBSMHaoHuoGoodsModel.m */,
 			);
 			path = home;
 			sourceTree = "<group>";
@@ -740,6 +755,8 @@
 		F8A990A01F75128200C2592B /* 第0组 */ = {
 			isa = PBXGroup;
 			children = (
+				F8A990B11F751A6300C2592B /* LBSMHomeGridCell.h */,
+				F8A990B21F751A6300C2592B /* LBSMHomeGridCell.m */,
 				F8A990A11F75128200C2592B /* LBSMSlideshowHeadView.h */,
 				F8A990A21F75128200C2592B /* LBSMSlideshowHeadView.m */,
 				F8A990A41F7512C300C2592B /* LBSMTopFooterView.h */,
@@ -755,6 +772,41 @@
 				F8A990A91F75146500C2592B /* DCNumericalScrollView.m */,
 			);
 			path = DCNumericalScrollView;
+			sourceTree = "<group>";
+		};
+		F8A990AB1F7517A000C2592B /* 第1组 */ = {
+			isa = PBXGroup;
+			children = (
+				F8A990AE1F75181C00C2592B /* LBSMHaoHuoHeadView.h */,
+				F8A990AF1F75181C00C2592B /* LBSMHaoHuoHeadView.m */,
+				F8A990B41F751A9300C2592B /* LBSMHaoHuoCell.h */,
+				F8A990B51F751A9300C2592B /* LBSMHaoHuoCell.m */,
+				F8A990BB1F751ECD00C2592B /* LBSMHaoHuoSliderCell */,
+			);
+			path = "第1组";
+			sourceTree = "<group>";
+		};
+		F8A990AC1F7517A000C2592B /* 第2组 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "第2组";
+			sourceTree = "<group>";
+		};
+		F8A990AD1F7517A000C2592B /* 第3组 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "第3组";
+			sourceTree = "<group>";
+		};
+		F8A990BB1F751ECD00C2592B /* LBSMHaoHuoSliderCell */ = {
+			isa = PBXGroup;
+			children = (
+				F8A990BC1F751ECD00C2592B /* LBSMHaoHuoGoodsCell.h */,
+				F8A990BD1F751ECD00C2592B /* LBSMHaoHuoGoodsCell.m */,
+			);
+			path = LBSMHaoHuoSliderCell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -977,8 +1029,9 @@
 				3AA90C5F1F651B2B00048C39 /* NSString+CZPath.m in Sources */,
 				3AA90C5D1F651B2B00048C39 /* NSString+CZBase64.m in Sources */,
 				F87B43C71F678BEE005ED2BC /* LBSMTabBar.m in Sources */,
+				F8A990B31F751A6300C2592B /* LBSMHomeGridCell.m in Sources */,
+				F8A990B61F751A9300C2592B /* LBSMHaoHuoCell.m in Sources */,
 				F8A990331F74A71300C2592B /* LBXScanNative.m in Sources */,
-				F8A990971F7501C700C2592B /* LBSMHomeGridCell.m in Sources */,
 				F8A990471F74A93300C2592B /* LBSMMessageController.m in Sources */,
 				F87B43BF1F678726005ED2BC /* LBSMNavController.m in Sources */,
 				F8A9908C1F74E19E00C2592B /* LBSMSearchTextField.m in Sources */,
@@ -993,6 +1046,7 @@
 				F8A9909F1F7510E300C2592B /* UIView+DCExtension.m in Sources */,
 				3AA90C6A1F651CB900048C39 /* AppDelegate.m in Sources */,
 				F8A990011F749AB300C2592B /* GQGesVCTransition.m in Sources */,
+				F8A990BE1F751ECD00C2592B /* LBSMHaoHuoGoodsCell.m in Sources */,
 				F8A9903C1F74A71300C2592B /* ZXingWrapper.m in Sources */,
 				F87B43D71F67D57C005ED2BC /* LBSMShopController.m in Sources */,
 				F8A990371F74A71300C2592B /* LBXScanView.m in Sources */,
@@ -1009,12 +1063,14 @@
 				F8A990381F74A71300C2592B /* LBXScanViewController.m in Sources */,
 				F8A990351F74A71300C2592B /* LBXScanResult.m in Sources */,
 				3AA90C5E1F651B2B00048C39 /* NSString+CZHash.m in Sources */,
+				F8A990B01F75181C00C2592B /* LBSMHaoHuoHeadView.m in Sources */,
 				F8A990361F74A71300C2592B /* LBXScanVideoZoomView.m in Sources */,
 				F8A9903B1F74A71300C2592B /* LBXZXCapture.m in Sources */,
 				F8A990321F74A71300C2592B /* LBXScanLineAnimation.m in Sources */,
 				F8A990081F74A5F300C2592B /* UIBarButtonItem+LBBarButtonItem.m in Sources */,
 				3AA90C611F651B2B00048C39 /* UIColor+CZAddition.m in Sources */,
 				F8A9903D1F74A71300C2592B /* LBXAlertAction.m in Sources */,
+				F8A990C11F75200100C2592B /* LBSMHaoHuoGoodsModel.m in Sources */,
 				3AFA7EAC1F64546300CC1D2D /* main.m in Sources */,
 				F8A9904E1F74AAF700C2592B /* LBSMMessageCell.m in Sources */,
 				F8A990431F74A71300C2592B /* UIAlertView+LBXAlertAction.m in Sources */,
