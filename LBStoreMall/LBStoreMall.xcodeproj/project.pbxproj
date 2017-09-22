@@ -32,6 +32,7 @@
 		F87B43D11F67D55C005ED2BC /* LBSMHomeController.m in Sources */ = {isa = PBXBuildFile; fileRef = F87B43D01F67D55C005ED2BC /* LBSMHomeController.m */; };
 		F87B43D41F67D56A005ED2BC /* LBSMMineController.m in Sources */ = {isa = PBXBuildFile; fileRef = F87B43D31F67D56A005ED2BC /* LBSMMineController.m */; };
 		F87B43D71F67D57C005ED2BC /* LBSMShopController.m in Sources */ = {isa = PBXBuildFile; fileRef = F87B43D61F67D57C005ED2BC /* LBSMShopController.m */; };
+		F8A990011F749AB300C2592B /* GQGesVCTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = F8A990001F749AB300C2592B /* GQGesVCTransition.m */; };
 		F94E060C399C91F075D61321 /* libPods-LBStoreMall.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A304A683BFA9B931C1ECDFC9 /* libPods-LBStoreMall.a */; };
 /* End PBXBuildFile section */
 
@@ -110,6 +111,8 @@
 		F87B43D31F67D56A005ED2BC /* LBSMMineController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LBSMMineController.m; sourceTree = "<group>"; };
 		F87B43D51F67D57C005ED2BC /* LBSMShopController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LBSMShopController.h; sourceTree = "<group>"; };
 		F87B43D61F67D57C005ED2BC /* LBSMShopController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LBSMShopController.m; sourceTree = "<group>"; };
+		F8A98FFF1F749AB300C2592B /* GQGesVCTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GQGesVCTransition.h; sourceTree = "<group>"; };
+		F8A990001F749AB300C2592B /* GQGesVCTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GQGesVCTransition.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -163,6 +166,7 @@
 		3AA90C391F651B0B00048C39 /* common */ = {
 			isa = PBXGroup;
 			children = (
+				F8A98FFE1F749AB300C2592B /* GQGesVCTransition */,
 				3AA90C401F651B2B00048C39 /* Additions */,
 			);
 			path = common;
@@ -377,6 +381,15 @@
 			path = shopping;
 			sourceTree = "<group>";
 		};
+		F8A98FFE1F749AB300C2592B /* GQGesVCTransition */ = {
+			isa = PBXGroup;
+			children = (
+				F8A98FFF1F749AB300C2592B /* GQGesVCTransition.h */,
+				F8A990001F749AB300C2592B /* GQGesVCTransition.m */,
+			);
+			path = GQGesVCTransition;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -576,6 +589,7 @@
 				3AA90C641F651B2B00048C39 /* UIView+CZAddition.m in Sources */,
 				F87B43CE1F67D541005ED2BC /* LBSMClassifyController.m in Sources */,
 				3AA90C6A1F651CB900048C39 /* AppDelegate.m in Sources */,
+				F8A990011F749AB300C2592B /* GQGesVCTransition.m in Sources */,
 				F87B43D71F67D57C005ED2BC /* LBSMShopController.m in Sources */,
 				F87B43D11F67D55C005ED2BC /* LBSMHomeController.m in Sources */,
 				3AA90C621F651B2B00048C39 /* UILabel+CZAddition.m in Sources */,
