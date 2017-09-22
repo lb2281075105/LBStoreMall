@@ -78,6 +78,8 @@
 		F8A990811F74AF3800C2592B /* GoodsGrid.plist in Resources */ = {isa = PBXBuildFile; fileRef = F8A9906D1F74AF3800C2592B /* GoodsGrid.plist */; };
 		F8A990821F74AF3800C2592B /* HomeHighGoods.plist in Resources */ = {isa = PBXBuildFile; fileRef = F8A9906E1F74AF3800C2592B /* HomeHighGoods.plist */; };
 		F8A9908C1F74E19E00C2592B /* LBSMSearchTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = F8A9908B1F74E19E00C2592B /* LBSMSearchTextField.m */; };
+		F8A990911F74FF2500C2592B /* LBSMHomeGrid.m in Sources */ = {isa = PBXBuildFile; fileRef = F8A990901F74FF2500C2592B /* LBSMHomeGrid.m */; };
+		F8A990971F7501C700C2592B /* LBSMHomeGridCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F8A990961F7501C700C2592B /* LBSMHomeGridCell.m */; };
 		F94E060C399C91F075D61321 /* libPods-LBStoreMall.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A304A683BFA9B931C1ECDFC9 /* libPods-LBStoreMall.a */; };
 /* End PBXBuildFile section */
 
@@ -227,6 +229,10 @@
 		F8A9906E1F74AF3800C2592B /* HomeHighGoods.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = HomeHighGoods.plist; sourceTree = "<group>"; };
 		F8A9908A1F74E19E00C2592B /* LBSMSearchTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LBSMSearchTextField.h; sourceTree = "<group>"; };
 		F8A9908B1F74E19E00C2592B /* LBSMSearchTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LBSMSearchTextField.m; sourceTree = "<group>"; };
+		F8A9908F1F74FF2500C2592B /* LBSMHomeGrid.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LBSMHomeGrid.h; sourceTree = "<group>"; };
+		F8A990901F74FF2500C2592B /* LBSMHomeGrid.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LBSMHomeGrid.m; sourceTree = "<group>"; };
+		F8A990951F7501C700C2592B /* LBSMHomeGridCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LBSMHomeGridCell.h; sourceTree = "<group>"; };
+		F8A990961F7501C700C2592B /* LBSMHomeGridCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LBSMHomeGridCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -427,6 +433,7 @@
 		F87B43C21F678B8E005ED2BC /* view */ = {
 			isa = PBXGroup;
 			children = (
+				F8A9908D1F74FEDE00C2592B /* home */,
 				F8A990831F74B9AA00C2592B /* search */,
 				F8A990481F74AAB600C2592B /* message */,
 				F87B43C41F678BB0005ED2BC /* main */,
@@ -588,6 +595,7 @@
 		F8A9904F1F74AB7600C2592B /* model */ = {
 			isa = PBXGroup;
 			children = (
+				F8A9908E1F74FF0000C2592B /* home */,
 				F8A990511F74AB9100C2592B /* message */,
 			);
 			name = model;
@@ -685,6 +693,24 @@
 				F8A9908B1F74E19E00C2592B /* LBSMSearchTextField.m */,
 			);
 			path = search;
+			sourceTree = "<group>";
+		};
+		F8A9908D1F74FEDE00C2592B /* home */ = {
+			isa = PBXGroup;
+			children = (
+				F8A990951F7501C700C2592B /* LBSMHomeGridCell.h */,
+				F8A990961F7501C700C2592B /* LBSMHomeGridCell.m */,
+			);
+			path = home;
+			sourceTree = "<group>";
+		};
+		F8A9908E1F74FF0000C2592B /* home */ = {
+			isa = PBXGroup;
+			children = (
+				F8A9908F1F74FF2500C2592B /* LBSMHomeGrid.h */,
+				F8A990901F74FF2500C2592B /* LBSMHomeGrid.m */,
+			);
+			path = home;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -901,12 +927,14 @@
 				F8A990541F74ABA900C2592B /* LBSMMessageModel.m in Sources */,
 				3AA90C6E1F651D2100048C39 /* LBSMTabBarController.m in Sources */,
 				3AA90C5A1F651B2B00048C39 /* NSArray+Log.m in Sources */,
+				F8A990911F74FF2500C2592B /* LBSMHomeGrid.m in Sources */,
 				F8A9904B1F74AAE300C2592B /* LBSMMessageTableView.m in Sources */,
 				3AA90C601F651B2B00048C39 /* UIButton+CZAddition.m in Sources */,
 				3AA90C5F1F651B2B00048C39 /* NSString+CZPath.m in Sources */,
 				3AA90C5D1F651B2B00048C39 /* NSString+CZBase64.m in Sources */,
 				F87B43C71F678BEE005ED2BC /* LBSMTabBar.m in Sources */,
 				F8A990331F74A71300C2592B /* LBXScanNative.m in Sources */,
+				F8A990971F7501C700C2592B /* LBSMHomeGridCell.m in Sources */,
 				F8A990471F74A93300C2592B /* LBSMMessageController.m in Sources */,
 				F87B43BF1F678726005ED2BC /* LBSMNavController.m in Sources */,
 				F8A9908C1F74E19E00C2592B /* LBSMSearchTextField.m in Sources */,

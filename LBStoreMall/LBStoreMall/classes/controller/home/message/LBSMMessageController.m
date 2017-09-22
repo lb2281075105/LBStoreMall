@@ -7,7 +7,6 @@
 //
 
 #import "LBSMMessageController.h"
-#import <MJExtension.h>
 #import "LBSMMessageModel.h"
 #import "LBSMMessageTableView.h"
 

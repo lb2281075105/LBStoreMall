@@ -11,4 +11,5 @@ pod 'MJExtension'
 pod 'MJRefresh'
 pod 'Masonry'
 pod 'SVProgressHUD'
+pod 'SDWebImage' ,"3.8.2"
 end
