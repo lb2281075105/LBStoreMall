@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface LBSMHaoHuoCell : UICollectionViewCell<UICollectionViewDataSource , UICollectionViewDelegateFlowLayout>
+@interface LBSMHaoHuoCell : UICollectionViewCell<UICollectionViewDataSource, UICollectionViewDelegateFlowLayout>
 
 @end

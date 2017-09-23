@@ -244,9 +244,9 @@ static NSString *const TopFooterView = @"LBSMTopFooterView";
         /// 图片滚动的宽高
         return CGSizeMake([UIScreen cz_screenWidth], 150);
     }
-    if (section == 1 ||section == 3 || section == 4) {
-        /// 猜你喜欢的宽高
-        /// 推荐适合的宽高
+    /// || section == 3 || section == 4
+    if (section == 1) {
+        /// 设置合适的宽高
         return CGSizeMake([UIScreen cz_screenWidth], 40);
     }
     return CGSizeZero;

@@ -25,7 +25,7 @@ static NSString *const HaoHuoGoodsCell = @"LBSMHaoHuoGoodsCell";
 - (NSMutableArray *)huoGoodsArray
 {
     if (!_huoGoodsArray) {
-        _huoGoodsArray = [NSMutableArray array];
+        _huoGoodsArray = [[NSMutableArray alloc]init];
     }
     return _huoGoodsArray;
 }
@@ -39,6 +39,7 @@ static NSString *const HaoHuoGoodsCell = @"LBSMHaoHuoGoodsCell";
         layout.scrollDirection = UICollectionViewScrollDirectionHorizontal;
         _collectionView = [[UICollectionView alloc] initWithFrame:CGRectZero collectionViewLayout:layout];
         /// 大小为父视图的一样，超出部分就会朝着设置的方向滑动，不用设置集合视图的具体frame
+        /// 注意：集合视图和表视图能根据内部控件的大小自动适配，滑动视图的大小需要自己根据控件frame来进行手动设置
         _collectionView.frame = self.bounds;
         _collectionView.showsHorizontalScrollIndicator = NO;
         _collectionView.delegate = self;
@@ -49,7 +50,7 @@ static NSString *const HaoHuoGoodsCell = @"LBSMHaoHuoGoodsCell";
     }
     return _collectionView;
 }
-
+/// 重写构造方法 initWithFrame
 - (instancetype)initWithFrame:(CGRect)frame {
     
     self = [super initWithFrame:frame];

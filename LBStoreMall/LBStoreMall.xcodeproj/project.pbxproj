@@ -88,6 +88,7 @@
 		F8A990B61F751A9300C2592B /* LBSMHaoHuoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F8A990B51F751A9300C2592B /* LBSMHaoHuoCell.m */; };
 		F8A990BE1F751ECD00C2592B /* LBSMHaoHuoGoodsCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F8A990BD1F751ECD00C2592B /* LBSMHaoHuoGoodsCell.m */; };
 		F8A990C11F75200100C2592B /* LBSMHaoHuoGoodsModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F8A990C01F75200100C2592B /* LBSMHaoHuoGoodsModel.m */; };
+		F8ABAF681F761C5900C75B82 /* LBSMHaoGoodsButton.m in Sources */ = {isa = PBXBuildFile; fileRef = F8ABAF671F761C5800C75B82 /* LBSMHaoGoodsButton.m */; };
 		F94E060C399C91F075D61321 /* libPods-LBStoreMall.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A304A683BFA9B931C1ECDFC9 /* libPods-LBStoreMall.a */; };
 /* End PBXBuildFile section */
 
@@ -257,6 +258,8 @@
 		F8A990BD1F751ECD00C2592B /* LBSMHaoHuoGoodsCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LBSMHaoHuoGoodsCell.m; sourceTree = "<group>"; };
 		F8A990BF1F75200100C2592B /* LBSMHaoHuoGoodsModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LBSMHaoHuoGoodsModel.h; sourceTree = "<group>"; };
 		F8A990C01F75200100C2592B /* LBSMHaoHuoGoodsModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LBSMHaoHuoGoodsModel.m; sourceTree = "<group>"; };
+		F8ABAF661F761C5800C75B82 /* LBSMHaoGoodsButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LBSMHaoGoodsButton.h; sourceTree = "<group>"; };
+		F8ABAF671F761C5800C75B82 /* LBSMHaoGoodsButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LBSMHaoGoodsButton.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -782,6 +785,8 @@
 				F8A990B41F751A9300C2592B /* LBSMHaoHuoCell.h */,
 				F8A990B51F751A9300C2592B /* LBSMHaoHuoCell.m */,
 				F8A990BB1F751ECD00C2592B /* LBSMHaoHuoSliderCell */,
+				F8ABAF661F761C5800C75B82 /* LBSMHaoGoodsButton.h */,
+				F8ABAF671F761C5800C75B82 /* LBSMHaoGoodsButton.m */,
 			);
 			path = "第1组";
 			sourceTree = "<group>";
@@ -1072,6 +1077,7 @@
 				F8A9903D1F74A71300C2592B /* LBXAlertAction.m in Sources */,
 				F8A990C11F75200100C2592B /* LBSMHaoHuoGoodsModel.m in Sources */,
 				3AFA7EAC1F64546300CC1D2D /* main.m in Sources */,
+				F8ABAF681F761C5900C75B82 /* LBSMHaoGoodsButton.m in Sources */,
 				F8A9904E1F74AAF700C2592B /* LBSMMessageCell.m in Sources */,
 				F8A990431F74A71300C2592B /* UIAlertView+LBXAlertAction.m in Sources */,
 			);

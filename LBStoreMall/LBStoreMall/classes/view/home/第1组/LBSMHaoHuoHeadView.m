@@ -7,6 +7,7 @@
 //
 
 #import "LBSMHaoHuoHeadView.h"
+#import "LBSMHaoGoodsButton.h"
 @interface LBSMHaoHuoHeadView ()
 /// 红色块
 @property (strong , nonatomic)UIView *redView;
@@ -14,8 +15,8 @@
 @property (strong , nonatomic)UILabel *timeLabel;
 /// 倒计时
 @property (strong , nonatomic)UILabel *countDownLabel;
-//// 好货秒抢
-//@property (strong , nonatomic)DCZuoWenRightButton *quickButton;
+/// 好货秒抢
+@property (strong , nonatomic)LBSMHaoGoodsButton *rightButton;
 @end
 
 @implementation LBSMHaoHuoHeadView
@@ -46,17 +47,17 @@
     _countDownLabel.text = @"05 : 58 : 33";
     _countDownLabel.font = LBSMFont(14);
     [self addSubview:_countDownLabel];
-    
-//    _quickButton = [DCZuoWenRightButton buttonWithType:UIButtonTypeCustom];
-//    _quickButton.titleLabel.font = LBSMFont(12);
-//    [_quickButton setImage:[UIImage imageNamed:@"shouye_icon_jiantou"] forState:UIControlStateNormal];
-//    [_quickButton setTitleColor:[UIColor darkGrayColor] forState:UIControlStateNormal];
-//    [_quickButton setTitle:@"好货秒抢" forState:UIControlStateNormal];
-//    [self addSubview:_quickButton];
+    /// 右边的按钮
+    _rightButton = [LBSMHaoGoodsButton buttonWithType:UIButtonTypeCustom];
+    _rightButton.titleLabel.font = LBSMFont(12);
+    [_rightButton setImage:[UIImage imageNamed:@"shouye_icon_jiantou"] forState:UIControlStateNormal];
+    [_rightButton setTitleColor:[UIColor darkGrayColor] forState:UIControlStateNormal];
+    [_rightButton setTitle:@"好货秒抢" forState:UIControlStateNormal];
+    [self addSubview:_rightButton];
     
 }
 
-#pragma mark - 布局
+/// 布局
 - (void)layoutSubviews
 {
     [super layoutSubviews];
@@ -64,7 +65,8 @@
     _redView.frame = CGRectMake(0, 10, 8, 20);
     _timeLabel.frame = CGRectMake(20, 0, 60, self.dc_height);
     _countDownLabel.frame = CGRectMake(CGRectGetMaxX(_timeLabel.frame), 0, 100, self.dc_height);
-//    _quickButton.frame = CGRectMake(self.dc_width - 70, 0, 70, self.dc_height);
+    _rightButton.frame = CGRectMake(self.dc_width - 70, 0, 70, self.dc_height);
+
 }
 
 @end
