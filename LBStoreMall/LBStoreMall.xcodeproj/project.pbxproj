@@ -89,6 +89,8 @@
 		F8A990BE1F751ECD00C2592B /* LBSMHaoHuoGoodsCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F8A990BD1F751ECD00C2592B /* LBSMHaoHuoGoodsCell.m */; };
 		F8A990C11F75200100C2592B /* LBSMHaoHuoGoodsModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F8A990C01F75200100C2592B /* LBSMHaoHuoGoodsModel.m */; };
 		F8ABAF681F761C5900C75B82 /* LBSMHaoGoodsButton.m in Sources */ = {isa = PBXBuildFile; fileRef = F8ABAF671F761C5800C75B82 /* LBSMHaoGoodsButton.m */; };
+		F8FBE66A1F7626ED000BF644 /* LBSMNeedLifeCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F8FBE6691F7626ED000BF644 /* LBSMNeedLifeCell.m */; };
+		F8FBE66D1F7628E8000BF644 /* LBSMNeedLifeGoodCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F8FBE66C1F7628E8000BF644 /* LBSMNeedLifeGoodCell.m */; };
 		F94E060C399C91F075D61321 /* libPods-LBStoreMall.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A304A683BFA9B931C1ECDFC9 /* libPods-LBStoreMall.a */; };
 /* End PBXBuildFile section */
 
@@ -260,6 +262,10 @@
 		F8A990C01F75200100C2592B /* LBSMHaoHuoGoodsModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LBSMHaoHuoGoodsModel.m; sourceTree = "<group>"; };
 		F8ABAF661F761C5800C75B82 /* LBSMHaoGoodsButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LBSMHaoGoodsButton.h; sourceTree = "<group>"; };
 		F8ABAF671F761C5800C75B82 /* LBSMHaoGoodsButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LBSMHaoGoodsButton.m; sourceTree = "<group>"; };
+		F8FBE6681F7626ED000BF644 /* LBSMNeedLifeCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LBSMNeedLifeCell.h; sourceTree = "<group>"; };
+		F8FBE6691F7626ED000BF644 /* LBSMNeedLifeCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LBSMNeedLifeCell.m; sourceTree = "<group>"; };
+		F8FBE66B1F7628E8000BF644 /* LBSMNeedLifeGoodCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LBSMNeedLifeGoodCell.h; sourceTree = "<group>"; };
+		F8FBE66C1F7628E8000BF644 /* LBSMNeedLifeGoodCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LBSMNeedLifeGoodCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -794,6 +800,10 @@
 		F8A990AC1F7517A000C2592B /* 第2组 */ = {
 			isa = PBXGroup;
 			children = (
+				F8FBE6681F7626ED000BF644 /* LBSMNeedLifeCell.h */,
+				F8FBE6691F7626ED000BF644 /* LBSMNeedLifeCell.m */,
+				F8FBE66B1F7628E8000BF644 /* LBSMNeedLifeGoodCell.h */,
+				F8FBE66C1F7628E8000BF644 /* LBSMNeedLifeGoodCell.m */,
 			);
 			path = "第2组";
 			sourceTree = "<group>";
@@ -1036,8 +1046,10 @@
 				F87B43C71F678BEE005ED2BC /* LBSMTabBar.m in Sources */,
 				F8A990B31F751A6300C2592B /* LBSMHomeGridCell.m in Sources */,
 				F8A990B61F751A9300C2592B /* LBSMHaoHuoCell.m in Sources */,
+				F8FBE66D1F7628E8000BF644 /* LBSMNeedLifeGoodCell.m in Sources */,
 				F8A990331F74A71300C2592B /* LBXScanNative.m in Sources */,
 				F8A990471F74A93300C2592B /* LBSMMessageController.m in Sources */,
+				F8FBE66A1F7626ED000BF644 /* LBSMNeedLifeCell.m in Sources */,
 				F87B43BF1F678726005ED2BC /* LBSMNavController.m in Sources */,
 				F8A9908C1F74E19E00C2592B /* LBSMSearchTextField.m in Sources */,
 				F8A990A61F7512C300C2592B /* LBSMTopFooterView.m in Sources */,

@@ -17,6 +17,7 @@
 #import "LBSMTopFooterView.h"
 #import "LBSMHaoHuoHeadView.h"
 #import "LBSMHaoHuoCell.h"
+#import "LBSMNeedLifeCell.h"
 @interface LBSMHomeController ()<UICollectionViewDataSource, UICollectionViewDelegateFlowLayout>
 /// 滑动视图
 @property (strong , nonatomic)UICollectionView *collectionView;
@@ -29,6 +30,7 @@
 /// cell
 static NSString *const HomeGridCell = @"LBSMHomeGridCell";
 static NSString *const HaoHuoCell = @"LBSMHaoHuoCell";
+static NSString *const NeedLifeCell = @"LBSMNeedLifeCell";
 /// head
 static NSString *const SlideshowHeadView = @"LBSMSlideshowHeadView";
 static NSString *const HaoHuoHeadView = @"LBSMHaoHuoHeadView";
@@ -51,6 +53,8 @@ static NSString *const TopFooterView = @"LBSMTopFooterView";
         /// cell九宫格
         [_collectionView registerClass:[LBSMHomeGridCell class] forCellWithReuseIdentifier:HomeGridCell];
         [_collectionView registerClass:[LBSMHaoHuoCell class] forCellWithReuseIdentifier:HaoHuoCell];
+        [_collectionView registerClass:[LBSMNeedLifeCell class] forCellWithReuseIdentifier:NeedLifeCell];
+
         /// header
         [_collectionView registerClass:[LBSMSlideshowHeadView class] forSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:SlideshowHeadView];
         [_collectionView registerClass:[LBSMHaoHuoHeadView class] forSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:HaoHuoHeadView];
@@ -150,6 +154,10 @@ static NSString *const TopFooterView = @"LBSMTopFooterView";
         /// 好货秒抢
         LBSMHaoHuoCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:HaoHuoCell forIndexPath:indexPath];
         collectionViewcell = cell;
+    }else if (indexPath.section == 2) {//掌上专享
+        LBSMNeedLifeCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:NeedLifeCell forIndexPath:indexPath];
+        cell.needLifeArray = NeedLifeArray;
+        collectionViewcell = cell;
     }
     
  
@@ -157,16 +165,17 @@ static NSString *const TopFooterView = @"LBSMTopFooterView";
 }
 - (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath {
     if (indexPath.section == 0) {
-        /// 九宫格组
+        /// 第0组九宫格组
         return CGSizeMake([UIScreen cz_screenWidth]/5 , [UIScreen cz_screenWidth]/5 + 10);
     }
     if (indexPath.section == 1) {
-        /// 好货秒抢
+        /// 第1组好货秒抢
         return CGSizeMake([UIScreen cz_screenWidth], 150);
     }
-//    if (indexPath.section == 2) {//掌上
-//        return CGSizeMake(ScreenW,ScreenW * 0.35 + 120);
-//    }
+    if (indexPath.section == 2) {
+        /// 第2组商品
+        return CGSizeMake([UIScreen cz_screenWidth],[UIScreen cz_screenWidth] * 0.35 + 120);
+    }
 //    if (indexPath.section == 3) {//推荐组
 //        return [self layoutAttributesForItemAtIndexPath:indexPath].size;
 //    }

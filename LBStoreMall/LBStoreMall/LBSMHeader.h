@@ -23,7 +23,8 @@
 #define kWindowH        [UIScreen mainScreen].bounds.size.height
 //应用程序的屏幕宽度
 #define kWindowW        [UIScreen mainScreen].bounds.size.width
-
+//数组
+#define NeedLifeArray  @[@"http://gfs8.gomein.net.cn/T1TkDvBK_j1RCvBVdK.jpg",@"http://gfs1.gomein.net.cn/T1loYvBCZj1RCvBVdK.jpg",@"http://gfs1.gomein.net.cn/T1w5bvB7K_1RCvBVdK.jpg",@"http://gfs1.gomein.net.cn/T1w5bvB7K_1RCvBVdK.jpg",@"http://gfs6.gomein.net.cn/T1L.VvBCxv1RCvBVdK.jpg",@"http://gfs9.gomein.net.cn/T1joLvBKhT1RCvBVdK.jpg",@"http://gfs5.gomein.net.cn/T1AoVvB7_v1RCvBVdK.jpg"];
 
 #elif
 #define LBSMLog(...)
