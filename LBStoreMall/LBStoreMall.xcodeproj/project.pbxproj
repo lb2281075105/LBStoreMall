@@ -17,6 +17,7 @@
 		3A71724A1F77776E00CA244C /* LBSMHotCommend.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A7172491F77776E00CA244C /* LBSMHotCommend.m */; };
 		3A71724F1F777CD800CA244C /* Foundation+Log.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A71724B1F777CD800CA244C /* Foundation+Log.m */; };
 		3A7172501F777CD800CA244C /* DCSpeedy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A71724E1F777CD800CA244C /* DCSpeedy.m */; };
+		3A7172551F77837900CA244C /* LBSMGoodsSetController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A7172541F77837900CA244C /* LBSMGoodsSetController.m */; };
 		3AA90C5A1F651B2B00048C39 /* NSArray+Log.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AA90C431F651B2B00048C39 /* NSArray+Log.m */; };
 		3AA90C5B1F651B2B00048C39 /* NSAttributedString+CZAdditon.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AA90C451F651B2B00048C39 /* NSAttributedString+CZAdditon.m */; };
 		3AA90C5C1F651B2B00048C39 /* NSObject+CZRuntime.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AA90C471F651B2B00048C39 /* NSObject+CZRuntime.m */; };
@@ -143,6 +144,8 @@
 		3A71724D1F777CD800CA244C /* DCSpeedy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCSpeedy.h; sourceTree = "<group>"; };
 		3A71724E1F777CD800CA244C /* DCSpeedy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCSpeedy.m; sourceTree = "<group>"; };
 		3A7172511F777D5900CA244C /* PingFang Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "PingFang Medium.ttf"; sourceTree = "<group>"; };
+		3A7172531F77837900CA244C /* LBSMGoodsSetController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LBSMGoodsSetController.h; sourceTree = "<group>"; };
+		3A7172541F77837900CA244C /* LBSMGoodsSetController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LBSMGoodsSetController.m; sourceTree = "<group>"; };
 		3AA90C411F651B2B00048C39 /* CZAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CZAdditions.h; sourceTree = "<group>"; };
 		3AA90C421F651B2B00048C39 /* NSArray+Log.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+Log.h"; sourceTree = "<group>"; };
 		3AA90C431F651B2B00048C39 /* NSArray+Log.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Log.m"; sourceTree = "<group>"; };
@@ -367,6 +370,15 @@
 			path = LBSMSpeedy;
 			sourceTree = "<group>";
 		};
+		3A7172521F77835E00CA244C /* LBSMGoodsSetController */ = {
+			isa = PBXGroup;
+			children = (
+				3A7172531F77837900CA244C /* LBSMGoodsSetController.h */,
+				3A7172541F77837900CA244C /* LBSMGoodsSetController.m */,
+			);
+			path = LBSMGoodsSetController;
+			sourceTree = "<group>";
+		};
 		3AA90C381F651B0B00048C39 /* classes */ = {
 			isa = PBXGroup;
 			children = (
@@ -574,6 +586,7 @@
 			children = (
 				F87B43CF1F67D55C005ED2BC /* LBSMHomeController.h */,
 				F87B43D01F67D55C005ED2BC /* LBSMHomeController.m */,
+				3A7172521F77835E00CA244C /* LBSMGoodsSetController */,
 				F8A990441F74A91D00C2592B /* message */,
 			);
 			path = home;
@@ -1123,6 +1136,7 @@
 				F8A990A61F7512C300C2592B /* LBSMTopFooterView.m in Sources */,
 				3AA90C5B1F651B2B00048C39 /* NSAttributedString+CZAdditon.m in Sources */,
 				3AA90C641F651B2B00048C39 /* UIView+CZAddition.m in Sources */,
+				3A7172551F77837900CA244C /* LBSMGoodsSetController.m in Sources */,
 				F8A9903E1F74A71300C2592B /* MyQRViewController.m in Sources */,
 				F8A990421F74A71300C2592B /* UIActionSheet+LBXAlertAction.m in Sources */,
 				F8A990A31F75128200C2592B /* LBSMSlideshowHeadView.m in Sources */,

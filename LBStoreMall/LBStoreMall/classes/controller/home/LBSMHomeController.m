@@ -25,6 +25,7 @@
 #import "LBSMHotCommendFootView.h"
 #import "LBSMHotCommendCell.h"
 #import "LBSMHotCommend.h"
+#import "LBSMGoodsSetController.h"
 @interface LBSMHomeController ()<UICollectionViewDataSource, UICollectionViewDelegateFlowLayout>
 /// 滑动视图
 @property (strong , nonatomic)UICollectionView *collectionView;
@@ -34,6 +35,9 @@
 @property (strong , nonatomic)NSMutableArray *homeGridArray;
 /// 热门推荐
 @property (strong , nonatomic)NSMutableArray<LBSMHotCommend *> *hotCommend;
+/* 滚回顶部按钮 */
+@property (strong , nonatomic)UIButton *backTopButton;
+
 @end
 /// cell
 static NSString *const HomeGridCell = @"LBSMHomeGridCell";
@@ -126,6 +130,27 @@ static NSString *const HotCommendFootView = @"LBSMHotCommendFootView";
     [self addJiuGrid];
     /// 热门推荐
     [self hotCommendMethod];
+    /// 滑动到顶部
+    [self setUpScrollToTopView];
+}
+- (void)setUpScrollToTopView{
+
+    _backTopButton = [UIButton buttonWithType:UIButtonTypeCustom];
+    [self.view addSubview:_backTopButton];
+    [_backTopButton addTarget:self action:@selector(scrollToTop) forControlEvents:UIControlEventTouchUpInside];
+    [_backTopButton setImage:[UIImage imageNamed:@"btn_UpToTop"] forState:UIControlStateNormal];
+    _backTopButton.hidden = YES;
+    _backTopButton.frame = CGRectMake([UIScreen cz_screenWidth] - 50, [UIScreen cz_screenHeight] - 110, 40, 40);
+}
+- (void)scrollViewDidScroll:(UIScrollView *)scrollView
+{
+    /// 判断回到顶部按钮是否隐藏
+    _backTopButton.hidden = (scrollView.contentOffset.y > [UIScreen cz_screenHeight]) ? NO : YES;
+}
+/// 滑动到顶部
+- (void)scrollToTop{
+
+    [self.collectionView scrollRectToVisible:CGRectMake(0, 0, 1, 1) animated:YES];
 }
 - (void)hotCommendMethod{
 
@@ -207,7 +232,7 @@ static NSString *const HotCommendFootView = @"LBSMHotCommendFootView";
         /// 热门推荐
         LBSMHotCommendCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:HotCommendCell forIndexPath:indexPath];
         cell.lookSameBlock = ^{
-            NSLog(@"点击了第%zd商品的找相似",indexPath.row);
+            NSLog(@"热门推荐第%zd商品的找相似",indexPath.row);
         };
         cell.hotCommend = _hotCommend[indexPath.row];
         collectionViewcell = cell;
@@ -253,13 +278,13 @@ static NSString *const HotCommendFootView = @"LBSMHotCommendFootView";
 }
 
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath {
-    if (indexPath.section == 0) {//10
+    if (indexPath.section == 0) {
         NSLog(@"点击了第 %zd 个",indexPath.row);
     }else if (indexPath.section == 4){
-//        NSLog(@"点击了推荐的第%zd个商品",indexPath.row);
-//        DCGoodsSetViewController *goodSetVc = [[DCGoodsSetViewController alloc] init];
-//        goodSetVc.goodPlisName = @"ClasiftyGoods.plist";
-//        [self.navigationController pushViewController:goodSetVc animated:YES];
+        LBSMLog(@"热门推荐的第%zd个商品",indexPath.row);
+        LBSMGoodsSetController *goodSetVc = [[LBSMGoodsSetController alloc] init];
+        goodSetVc.goodName = @"ClasiftyGoods.plist";
+        [self.navigationController pushViewController:goodSetVc animated:YES];
     }
 }
 /// X间距(这个X、Y的间距需要设置)
