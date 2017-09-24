@@ -19,6 +19,8 @@
 #import "LBSMHaoHuoCell.h"
 #import "LBSMNeedLifeCell.h"
 #import "LBSMScrollAdFootView.h"
+#import "LBSMPinPaiJingXuanCell.h"
+#import "LBSMPinPaiHeaderView.h"
 @interface LBSMHomeController ()<UICollectionViewDataSource, UICollectionViewDelegateFlowLayout>
 /// 滑动视图
 @property (strong , nonatomic)UICollectionView *collectionView;
@@ -32,9 +34,13 @@
 static NSString *const HomeGridCell = @"LBSMHomeGridCell";
 static NSString *const HaoHuoCell = @"LBSMHaoHuoCell";
 static NSString *const NeedLifeCell = @"LBSMNeedLifeCell";
+static NSString *const PinPaiJingXuanCell = @"LBSMPinPaiJingXuanCell";
+
 /// head
 static NSString *const SlideshowHeadView = @"LBSMSlideshowHeadView";
 static NSString *const HaoHuoHeadView = @"LBSMHaoHuoHeadView";
+static NSString *const PinPaiHeaderView = @"LBSMPinPaiHeaderView";
+
 /// foot
 static NSString *const TopFooterView = @"LBSMTopFooterView";
 static NSString *const ScrollAdFootView = @"LBSMScrollAdFootView";
@@ -53,14 +59,15 @@ static NSString *const ScrollAdFootView = @"LBSMScrollAdFootView";
         _collectionView.showsVerticalScrollIndicator = NO;
         _collectionView.delegate = self;
         _collectionView.dataSource = self;
-        /// cell九宫格
+        /// cell
         [_collectionView registerClass:[LBSMHomeGridCell class] forCellWithReuseIdentifier:HomeGridCell];
         [_collectionView registerClass:[LBSMHaoHuoCell class] forCellWithReuseIdentifier:HaoHuoCell];
         [_collectionView registerClass:[LBSMNeedLifeCell class] forCellWithReuseIdentifier:NeedLifeCell];
-
+        [_collectionView registerClass:[LBSMPinPaiJingXuanCell class] forCellWithReuseIdentifier:PinPaiJingXuanCell];
         /// header
         [_collectionView registerClass:[LBSMSlideshowHeadView class] forSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:SlideshowHeadView];
         [_collectionView registerClass:[LBSMHaoHuoHeadView class] forSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:HaoHuoHeadView];
+        [_collectionView registerClass:[LBSMPinPaiHeaderView class] forSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:PinPaiHeaderView];
         
         
         /// footer
@@ -134,12 +141,14 @@ static NSString *const ScrollAdFootView = @"LBSMScrollAdFootView";
         /// 好货秒抢
         return 1;
     }
-    if (section == 2) { //掌上专享
+    if (section == 2) {
+        /// 生活用品
         return 1;
     }
-//    if (section == 3) { //推荐
-//        return GoodsHandheldImagesArray.count;
-//    }
+    if (section == 3) {
+        /// 品牌推荐
+        return PinPaiImagesArray.count;
+    }
 //    if (section == 4) { //猜你喜欢
 //        return _youLikeItem.count;
 //    }
@@ -162,6 +171,12 @@ static NSString *const ScrollAdFootView = @"LBSMScrollAdFootView";
         LBSMNeedLifeCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:NeedLifeCell forIndexPath:indexPath];
         cell.needLifeArray = NeedLifeArray;
         collectionViewcell = cell;
+    }else if (indexPath.section == 3) {
+        /// 品牌精选
+        LBSMPinPaiJingXuanCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:PinPaiJingXuanCell forIndexPath:indexPath];
+        NSArray *images = PinPaiImagesArray;
+        cell.imageStr = images[indexPath.row];
+        collectionViewcell = cell;
     }
     
  
@@ -180,14 +195,30 @@ static NSString *const ScrollAdFootView = @"LBSMScrollAdFootView";
         /// 第2组商品
         return CGSizeMake([UIScreen cz_screenWidth],[UIScreen cz_screenWidth] * 0.35 + 120);
     }
-//    if (indexPath.section == 3) {//推荐组
-//        return [self layoutAttributesForItemAtIndexPath:indexPath].size;
-//    }
+    if (indexPath.section == 3) {
+        /// 第3组品牌精选
+        return [self layoutAttributesForItemAtIndexPath:indexPath].size;
+    }
 //    if (indexPath.section == 4) {//猜你喜欢
 //        return CGSizeMake((ScreenW - 4)/2, (ScreenW - 4)/2 + 40);
 //    }
     return CGSizeZero;
 }
+/// 对单元格宽度进行设置
+- (UICollectionViewLayoutAttributes *)layoutAttributesForItemAtIndexPath:(NSIndexPath *)indexPath {
+    UICollectionViewLayoutAttributes *layoutAttributes = [UICollectionViewLayoutAttributes layoutAttributesForCellWithIndexPath:indexPath];
+    if (indexPath.section == 3) {
+        if (indexPath.row == 0) {
+            layoutAttributes.size = CGSizeMake([UIScreen cz_screenWidth], [UIScreen cz_screenWidth] * 0.35);
+        }else if (indexPath.row == 1 || indexPath.row == 2 || indexPath.row == 3 || indexPath.row == 4){
+            layoutAttributes.size = CGSizeMake([UIScreen cz_screenWidth] * 0.5, [UIScreen cz_screenWidth] * 0.2);
+        }else{
+            layoutAttributes.size = CGSizeMake([UIScreen cz_screenWidth] * 0.25, [UIScreen cz_screenWidth] * 0.35);
+        }
+    }
+    return layoutAttributes;
+}
+
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath {
     if (indexPath.section == 0) {//10
         NSLog(@"点击了第 %zd 个",indexPath.row);
@@ -218,14 +249,11 @@ static NSString *const ScrollAdFootView = @"LBSMScrollAdFootView";
         }else if (indexPath.section == 1){
             LBSMHaoHuoHeadView *headerView = [collectionView dequeueReusableSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:HaoHuoHeadView forIndexPath:indexPath];
             reusableview = headerView;
+        }else if (indexPath.section == 3){
+            LBSMPinPaiHeaderView *headerView = [collectionView dequeueReusableSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:PinPaiHeaderView forIndexPath:indexPath];
+            reusableview = headerView;
         }
-//        }else if (indexPath.section == 3){
-//            DCYouLikeHeadView *headerView = [collectionView dequeueReusableSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:DCYouLikeHeadViewID forIndexPath:indexPath];
-//            [headerView.likeButton setTitle:@"品牌精选" forState:UIControlStateNormal];
-//            [headerView.likeButton setTitleColor:RGB(77, 171, 21) forState:UIControlStateNormal];
-//            [headerView.likeButton setImage:[UIImage imageNamed:@"shouye_icon03"] forState:UIControlStateNormal];
-//            reusableview = headerView;
-//        }else if (indexPath.section == 4){
+//            else if (indexPath.section == 4){
 //            DCYouLikeHeadView *headerView = [collectionView dequeueReusableSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:DCYouLikeHeadViewID forIndexPath:indexPath];
 //            [headerView.likeButton setTitle:@"热门推荐" forState:UIControlStateNormal];
 //            [headerView.likeButton setTitleColor:RGB(14, 122, 241) forState:UIControlStateNormal];
@@ -257,8 +285,8 @@ static NSString *const ScrollAdFootView = @"LBSMScrollAdFootView";
         /// 图片滚动的宽高
         return CGSizeMake([UIScreen cz_screenWidth], 150);
     }
-    /// || section == 3 || section == 4
-    if (section == 1) {
+    ///  || section == 4
+    if (section == 1 || section == 3) {
         /// 设置合适的宽高
         return CGSizeMake([UIScreen cz_screenWidth], 40);
     }
