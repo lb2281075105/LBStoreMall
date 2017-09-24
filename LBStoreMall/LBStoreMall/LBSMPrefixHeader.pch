@@ -17,3 +17,4 @@
 #import <UIImageView+WebCache.h>
 #import <SDCycleScrollView.h>
 #import "UIView+DCExtension.h"
+#import "DCSpeedy.h"

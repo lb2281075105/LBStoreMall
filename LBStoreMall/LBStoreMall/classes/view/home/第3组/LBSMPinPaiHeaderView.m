@@ -22,10 +22,6 @@
 - (void)setUpUI
 {
     _pinPaiButton = [LBSMPinPaiButton buttonWithType:UIButtonTypeCustom];
-    [_pinPaiButton setTitle:@"品牌精选" forState:UIControlStateNormal];
-    [_pinPaiButton setTitleColor:LBSMColor(77, 171, 21) forState:UIControlStateNormal];
-    [_pinPaiButton setImage:[UIImage imageNamed:@"shouye_icon03"] forState:UIControlStateNormal];
-    _pinPaiButton.titleLabel.font = LBSMFont(13);
     [self addSubview:_pinPaiButton];
 }
 /// 布局

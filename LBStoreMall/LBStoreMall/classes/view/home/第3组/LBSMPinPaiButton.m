@@ -23,6 +23,7 @@
     [super layoutSubviews];
     
     [self.titleLabel sizeToFit];
+    self.titleLabel.font = [UIFont systemFontOfSize:14];
     self.titleLabel.dc_centerX = self.dc_width * 0.55;
     self.imageView.dc_x = self.titleLabel.dc_x - self.imageView.dc_width - 5;
 }

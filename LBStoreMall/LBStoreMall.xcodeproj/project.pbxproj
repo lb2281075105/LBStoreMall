@@ -11,6 +11,12 @@
 		3A7172381F7753E300CA244C /* LBSMPinPaiJingXuanCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A7172371F7753E300CA244C /* LBSMPinPaiJingXuanCell.m */; };
 		3A71723B1F77646B00CA244C /* LBSMPinPaiHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A71723A1F77646B00CA244C /* LBSMPinPaiHeaderView.m */; };
 		3A71723E1F77709600CA244C /* LBSMPinPaiButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A71723D1F77709600CA244C /* LBSMPinPaiButton.m */; };
+		3A7172411F77731F00CA244C /* LBSMHotCommendHeadView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A7172401F77731F00CA244C /* LBSMHotCommendHeadView.m */; };
+		3A7172441F77745300CA244C /* LBSMHotCommendFootView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A7172431F77745300CA244C /* LBSMHotCommendFootView.m */; };
+		3A7172471F7776E700CA244C /* LBSMHotCommendCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A7172461F7776E700CA244C /* LBSMHotCommendCell.m */; };
+		3A71724A1F77776E00CA244C /* LBSMHotCommend.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A7172491F77776E00CA244C /* LBSMHotCommend.m */; };
+		3A71724F1F777CD800CA244C /* Foundation+Log.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A71724B1F777CD800CA244C /* Foundation+Log.m */; };
+		3A7172501F777CD800CA244C /* DCSpeedy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A71724E1F777CD800CA244C /* DCSpeedy.m */; };
 		3AA90C5A1F651B2B00048C39 /* NSArray+Log.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AA90C431F651B2B00048C39 /* NSArray+Log.m */; };
 		3AA90C5B1F651B2B00048C39 /* NSAttributedString+CZAdditon.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AA90C451F651B2B00048C39 /* NSAttributedString+CZAdditon.m */; };
 		3AA90C5C1F651B2B00048C39 /* NSObject+CZRuntime.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AA90C471F651B2B00048C39 /* NSObject+CZRuntime.m */; };
@@ -125,6 +131,18 @@
 		3A71723A1F77646B00CA244C /* LBSMPinPaiHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LBSMPinPaiHeaderView.m; sourceTree = "<group>"; };
 		3A71723C1F77709600CA244C /* LBSMPinPaiButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LBSMPinPaiButton.h; sourceTree = "<group>"; };
 		3A71723D1F77709600CA244C /* LBSMPinPaiButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LBSMPinPaiButton.m; sourceTree = "<group>"; };
+		3A71723F1F77731F00CA244C /* LBSMHotCommendHeadView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LBSMHotCommendHeadView.h; sourceTree = "<group>"; };
+		3A7172401F77731F00CA244C /* LBSMHotCommendHeadView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LBSMHotCommendHeadView.m; sourceTree = "<group>"; };
+		3A7172421F77745300CA244C /* LBSMHotCommendFootView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LBSMHotCommendFootView.h; sourceTree = "<group>"; };
+		3A7172431F77745300CA244C /* LBSMHotCommendFootView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LBSMHotCommendFootView.m; sourceTree = "<group>"; };
+		3A7172451F7776E700CA244C /* LBSMHotCommendCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LBSMHotCommendCell.h; sourceTree = "<group>"; };
+		3A7172461F7776E700CA244C /* LBSMHotCommendCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LBSMHotCommendCell.m; sourceTree = "<group>"; };
+		3A7172481F77776E00CA244C /* LBSMHotCommend.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LBSMHotCommend.h; sourceTree = "<group>"; };
+		3A7172491F77776E00CA244C /* LBSMHotCommend.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LBSMHotCommend.m; sourceTree = "<group>"; };
+		3A71724B1F777CD800CA244C /* Foundation+Log.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Foundation+Log.m"; sourceTree = "<group>"; };
+		3A71724D1F777CD800CA244C /* DCSpeedy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCSpeedy.h; sourceTree = "<group>"; };
+		3A71724E1F777CD800CA244C /* DCSpeedy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCSpeedy.m; sourceTree = "<group>"; };
+		3A7172511F777D5900CA244C /* PingFang Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "PingFang Medium.ttf"; sourceTree = "<group>"; };
 		3AA90C411F651B2B00048C39 /* CZAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CZAdditions.h; sourceTree = "<group>"; };
 		3AA90C421F651B2B00048C39 /* NSArray+Log.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+Log.h"; sourceTree = "<group>"; };
 		3AA90C431F651B2B00048C39 /* NSArray+Log.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Log.m"; sourceTree = "<group>"; };
@@ -330,8 +348,23 @@
 		3A7172351F77527900CA244C /* 第4组 */ = {
 			isa = PBXGroup;
 			children = (
+				3A71723F1F77731F00CA244C /* LBSMHotCommendHeadView.h */,
+				3A7172401F77731F00CA244C /* LBSMHotCommendHeadView.m */,
+				3A7172421F77745300CA244C /* LBSMHotCommendFootView.h */,
+				3A7172431F77745300CA244C /* LBSMHotCommendFootView.m */,
+				3A7172451F7776E700CA244C /* LBSMHotCommendCell.h */,
+				3A7172461F7776E700CA244C /* LBSMHotCommendCell.m */,
 			);
 			path = "第4组";
+			sourceTree = "<group>";
+		};
+		3A71724C1F777CD800CA244C /* LBSMSpeedy */ = {
+			isa = PBXGroup;
+			children = (
+				3A71724D1F777CD800CA244C /* DCSpeedy.h */,
+				3A71724E1F777CD800CA244C /* DCSpeedy.m */,
+			);
+			path = LBSMSpeedy;
 			sourceTree = "<group>";
 		};
 		3AA90C381F651B0B00048C39 /* classes */ = {
@@ -351,6 +384,8 @@
 		3AA90C391F651B0B00048C39 /* common */ = {
 			isa = PBXGroup;
 			children = (
+				3A71724B1F777CD800CA244C /* Foundation+Log.m */,
+				3A71724C1F777CD800CA244C /* LBSMSpeedy */,
 				F8A990A71F75146500C2592B /* DCNumericalScrollView */,
 				F8A9909C1F7510E300C2592B /* UIView+DCExtension */,
 				F8A990091F74A71300C2592B /* RichScan */,
@@ -457,6 +492,7 @@
 				F8A990551F74AF3800C2592B /* Resource */,
 				3AFA7EAA1F64546300CC1D2D /* Supporting Files */,
 				3AA90C661F651B5600048C39 /* LBSMHeader.h */,
+				3A7172511F777D5900CA244C /* PingFang Medium.ttf */,
 				3AA90C671F651B7500048C39 /* LBSMPrefixHeader.pch */,
 			);
 			path = LBStoreMall;
@@ -781,6 +817,8 @@
 				F8A990901F74FF2500C2592B /* LBSMHomeGrid.m */,
 				F8A990BF1F75200100C2592B /* LBSMHaoHuoGoodsModel.h */,
 				F8A990C01F75200100C2592B /* LBSMHaoHuoGoodsModel.m */,
+				3A7172481F77776E00CA244C /* LBSMHotCommend.h */,
+				3A7172491F77776E00CA244C /* LBSMHotCommend.m */,
 			);
 			path = home;
 			sourceTree = "<group>";
@@ -1064,6 +1102,7 @@
 			files = (
 				F8A990341F74A71300C2592B /* LBXScanNetAnimation.m in Sources */,
 				F8A990541F74ABA900C2592B /* LBSMMessageModel.m in Sources */,
+				3A7172441F77745300CA244C /* LBSMHotCommendFootView.m in Sources */,
 				3AA90C6E1F651D2100048C39 /* LBSMTabBarController.m in Sources */,
 				3AA90C5A1F651B2B00048C39 /* NSArray+Log.m in Sources */,
 				F8A990911F74FF2500C2592B /* LBSMHomeGrid.m in Sources */,
@@ -1093,17 +1132,22 @@
 				3AA90C6A1F651CB900048C39 /* AppDelegate.m in Sources */,
 				F8A990011F749AB300C2592B /* GQGesVCTransition.m in Sources */,
 				F8A990BE1F751ECD00C2592B /* LBSMHaoHuoGoodsCell.m in Sources */,
+				3A71724F1F777CD800CA244C /* Foundation+Log.m in Sources */,
 				F8A9903C1F74A71300C2592B /* ZXingWrapper.m in Sources */,
+				3A7172501F777CD800CA244C /* DCSpeedy.m in Sources */,
 				F87B43D71F67D57C005ED2BC /* LBSMShopController.m in Sources */,
 				F8A990371F74A71300C2592B /* LBXScanView.m in Sources */,
+				3A7172411F77731F00CA244C /* LBSMHotCommendHeadView.m in Sources */,
 				F87B43D11F67D55C005ED2BC /* LBSMHomeController.m in Sources */,
 				3AA90C621F651B2B00048C39 /* UILabel+CZAddition.m in Sources */,
 				F8A990391F74A71300C2592B /* LBXScanViewStyle.m in Sources */,
 				3AA90C631F651B2B00048C39 /* UIScreen+CZAddition.m in Sources */,
+				3A7172471F7776E700CA244C /* LBSMHotCommendCell.m in Sources */,
 				3A71723B1F77646B00CA244C /* LBSMPinPaiHeaderView.m in Sources */,
 				F87B43D41F67D56A005ED2BC /* LBSMMineController.m in Sources */,
 				3AA90C651F651B2B00048C39 /* UIViewController+CZAddition.m in Sources */,
 				F8A990411F74A71300C2592B /* SubLBXScanViewController.m in Sources */,
+				3A71724A1F77776E00CA244C /* LBSMHotCommend.m in Sources */,
 				F8A990AA1F75146500C2592B /* DCNumericalScrollView.m in Sources */,
 				3AA90C5C1F651B2B00048C39 /* NSObject+CZRuntime.m in Sources */,
 				3A71723E1F77709600CA244C /* LBSMPinPaiButton.m in Sources */,
