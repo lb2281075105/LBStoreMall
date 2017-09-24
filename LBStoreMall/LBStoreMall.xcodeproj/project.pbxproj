@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3A7172331F77506500CA244C /* LBSMScrollAdFootView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A7172321F77506500CA244C /* LBSMScrollAdFootView.m */; };
 		3AA90C5A1F651B2B00048C39 /* NSArray+Log.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AA90C431F651B2B00048C39 /* NSArray+Log.m */; };
 		3AA90C5B1F651B2B00048C39 /* NSAttributedString+CZAdditon.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AA90C451F651B2B00048C39 /* NSAttributedString+CZAdditon.m */; };
 		3AA90C5C1F651B2B00048C39 /* NSObject+CZRuntime.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AA90C471F651B2B00048C39 /* NSObject+CZRuntime.m */; };
@@ -113,6 +114,8 @@
 
 /* Begin PBXFileReference section */
 		2C461B054A4E5F8BBDCB051A /* Pods-LBStoreMall.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LBStoreMall.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LBStoreMall/Pods-LBStoreMall.debug.xcconfig"; sourceTree = "<group>"; };
+		3A7172311F77506500CA244C /* LBSMScrollAdFootView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LBSMScrollAdFootView.h; sourceTree = "<group>"; };
+		3A7172321F77506500CA244C /* LBSMScrollAdFootView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LBSMScrollAdFootView.m; sourceTree = "<group>"; };
 		3AA90C411F651B2B00048C39 /* CZAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CZAdditions.h; sourceTree = "<group>"; };
 		3AA90C421F651B2B00048C39 /* NSArray+Log.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+Log.h"; sourceTree = "<group>"; };
 		3AA90C431F651B2B00048C39 /* NSArray+Log.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Log.m"; sourceTree = "<group>"; };
@@ -804,6 +807,8 @@
 				F8FBE6691F7626ED000BF644 /* LBSMNeedLifeCell.m */,
 				F8FBE66B1F7628E8000BF644 /* LBSMNeedLifeGoodCell.h */,
 				F8FBE66C1F7628E8000BF644 /* LBSMNeedLifeGoodCell.m */,
+				3A7172311F77506500CA244C /* LBSMScrollAdFootView.h */,
+				3A7172321F77506500CA244C /* LBSMScrollAdFootView.m */,
 			);
 			path = "第2组";
 			sourceTree = "<group>";
@@ -1044,6 +1049,7 @@
 				3AA90C5F1F651B2B00048C39 /* NSString+CZPath.m in Sources */,
 				3AA90C5D1F651B2B00048C39 /* NSString+CZBase64.m in Sources */,
 				F87B43C71F678BEE005ED2BC /* LBSMTabBar.m in Sources */,
+				3A7172331F77506500CA244C /* LBSMScrollAdFootView.m in Sources */,
 				F8A990B31F751A6300C2592B /* LBSMHomeGridCell.m in Sources */,
 				F8A990B61F751A9300C2592B /* LBSMHaoHuoCell.m in Sources */,
 				F8FBE66D1F7628E8000BF644 /* LBSMNeedLifeGoodCell.m in Sources */,

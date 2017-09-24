@@ -18,6 +18,7 @@
 #import "LBSMHaoHuoHeadView.h"
 #import "LBSMHaoHuoCell.h"
 #import "LBSMNeedLifeCell.h"
+#import "LBSMScrollAdFootView.h"
 @interface LBSMHomeController ()<UICollectionViewDataSource, UICollectionViewDelegateFlowLayout>
 /// 滑动视图
 @property (strong , nonatomic)UICollectionView *collectionView;
@@ -36,6 +37,8 @@ static NSString *const SlideshowHeadView = @"LBSMSlideshowHeadView";
 static NSString *const HaoHuoHeadView = @"LBSMHaoHuoHeadView";
 /// foot
 static NSString *const TopFooterView = @"LBSMTopFooterView";
+static NSString *const ScrollAdFootView = @"LBSMScrollAdFootView";
+
 
 @implementation LBSMHomeController
 
@@ -62,7 +65,7 @@ static NSString *const TopFooterView = @"LBSMTopFooterView";
         
         /// footer
         [_collectionView registerClass:[LBSMTopFooterView class] forSupplementaryViewOfKind:UICollectionElementKindSectionFooter withReuseIdentifier:TopFooterView];
-
+        [_collectionView registerClass:[LBSMScrollAdFootView class] forSupplementaryViewOfKind:UICollectionElementKindSectionFooter withReuseIdentifier:ScrollAdFootView];
         
         [self.view addSubview:_collectionView];
     }
@@ -131,9 +134,9 @@ static NSString *const TopFooterView = @"LBSMTopFooterView";
         /// 好货秒抢
         return 1;
     }
-//    if (section == 2) { //掌上专享
-//        return 1;
-//    }
+    if (section == 2) { //掌上专享
+        return 1;
+    }
 //    if (section == 3) { //推荐
 //        return GoodsHandheldImagesArray.count;
 //    }
@@ -154,7 +157,8 @@ static NSString *const TopFooterView = @"LBSMTopFooterView";
         /// 好货秒抢
         LBSMHaoHuoCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:HaoHuoCell forIndexPath:indexPath];
         collectionViewcell = cell;
-    }else if (indexPath.section == 2) {//掌上专享
+    }else if (indexPath.section == 2) {
+        /// 需要生活用品
         LBSMNeedLifeCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:NeedLifeCell forIndexPath:indexPath];
         cell.needLifeArray = NeedLifeArray;
         collectionViewcell = cell;
@@ -235,11 +239,11 @@ static NSString *const TopFooterView = @"LBSMTopFooterView";
         if (indexPath.section == 0) {
             LBSMTopFooterView *footview = [collectionView dequeueReusableSupplementaryViewOfKind:UICollectionElementKindSectionFooter withReuseIdentifier:TopFooterView forIndexPath:indexPath];
             reusableview = footview;
+        }else if (indexPath.section == 2){
+            LBSMScrollAdFootView *footerView = [collectionView dequeueReusableSupplementaryViewOfKind:UICollectionElementKindSectionFooter withReuseIdentifier:ScrollAdFootView forIndexPath:indexPath];
+            reusableview = footerView;
         }
-//        }else if (indexPath.section == 2){
-//            DCScrollAdFootView *footerView = [collectionView dequeueReusableSupplementaryViewOfKind:UICollectionElementKindSectionFooter withReuseIdentifier:DCScrollAdFootViewID forIndexPath:indexPath];
-//            reusableview = footerView;
-//        }else if (indexPath.section == 4) {
+//            else if (indexPath.section == 4) {
 //            DCOverFootView *footview = [collectionView dequeueReusableSupplementaryViewOfKind:UICollectionElementKindSectionFooter withReuseIdentifier:DCOverFootViewID forIndexPath:indexPath];
 //            reusableview = footview;
 //        }
@@ -266,9 +270,10 @@ static NSString *const TopFooterView = @"LBSMTopFooterView";
         /// Top头条的宽高
         return CGSizeMake([UIScreen cz_screenWidth], 60);
     }
-//    if (section == 2) {
-//        return CGSizeMake(ScreenW, 80); // 滚动广告
-//    }
+    if (section == 2) {
+        /// 滚动广告
+        return CGSizeMake([UIScreen cz_screenWidth], 80);
+    }
 //    if (section == 4) {
 //        return CGSizeMake(ScreenW, 40); // 结束
 //    }
