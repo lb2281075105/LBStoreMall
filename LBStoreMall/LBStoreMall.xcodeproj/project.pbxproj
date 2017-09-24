@@ -418,11 +418,11 @@
 		3AFA7EA91F64546300CC1D2D /* LBStoreMall */ = {
 			isa = PBXGroup;
 			children = (
-				F8A990551F74AF3800C2592B /* Resource */,
 				3AA90C381F651B0B00048C39 /* classes */,
 				3AFA7EB61F64546300CC1D2D /* Assets.xcassets */,
 				3AFA7EB81F64546300CC1D2D /* LaunchScreen.storyboard */,
 				3AFA7EBB1F64546300CC1D2D /* Info.plist */,
+				F8A990551F74AF3800C2592B /* Resource */,
 				3AFA7EAA1F64546300CC1D2D /* Supporting Files */,
 				3AA90C661F651B5600048C39 /* LBSMHeader.h */,
 				3AA90C671F651B7500048C39 /* LBSMPrefixHeader.pch */,
