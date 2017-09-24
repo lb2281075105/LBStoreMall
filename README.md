@@ -10,9 +10,9 @@
 
 用滑动视图UICollectionView来实现，页面布局分为4组，每组根据需要设置组头视图和组尾试图，对于复杂布局在cell内部再使用UICollectionView来进行实现，分组实现各组的布局和数组获取。
 
-* 错误解决
-<img src="1.png" width="375">
-<img src="2.png" width="375">
-<img src="3.png" width="375">
+* 首页截图
+<img src="1.png" width="375px">
+<img src="2.png" width="375px">
+<img src="3.png" width="375px">
 
 
