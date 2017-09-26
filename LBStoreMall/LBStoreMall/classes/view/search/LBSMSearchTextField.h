@@ -13,4 +13,9 @@
 @property (nonatomic, copy) dispatch_block_t rightBtnClickBlock;
 /// 搜索 
 @property (nonatomic, copy) dispatch_block_t searchBlock;
+
+- (instancetype)initWithFrame:(CGRect)frame withTitle:(NSString *)title withBool:(BOOL)orTrue;
+@property (nonatomic, strong) NSString *title;
+@property (nonatomic) BOOL orTrue;
+
 @end

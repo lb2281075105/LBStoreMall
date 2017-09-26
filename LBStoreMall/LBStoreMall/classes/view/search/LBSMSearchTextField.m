@@ -21,10 +21,12 @@
     }
     return self;
 }
-- (instancetype)initWithFrame:(CGRect)frame
+- (instancetype)initWithFrame:(CGRect)frame withTitle:(NSString *)title withBool:(BOOL)orTrue
 {
     self = [super initWithFrame:frame];
     if (self) {
+        _title = title;
+        _orTrue = orTrue;
         self.delegate = self;
         [self addSubviews];
     }
@@ -39,19 +41,27 @@
     maskLayer.path = maskPath.CGPath;
     self.layer.mask = maskLayer;
     
-    self.placeholder = @" 618 100元红包等你来抢";
-    [self setValue:[UIColor whiteColor] forKeyPath:@"_placeholderLabel.textColor"];
-    [self setValue:[UIFont boldSystemFontOfSize:14] forKeyPath:@"_placeholderLabel.font"];
-    /// 搜索按钮
-    _rightBtn = [UIButton buttonWithType:UIButtonTypeCustom];
-    [_rightBtn setImage:[UIImage imageNamed:@"voice"] forState:UIControlStateNormal];
-    [_rightBtn addTarget:self action:@selector(rightButtonClick) forControlEvents:UIControlEventTouchUpInside];
-    [self addSubview:_rightBtn];
-    [_rightBtn mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.centerY.equalTo(self);
-        make.height.with.equalTo(@20);
-        make.right.equalTo(self).offset(-5);
-    }];
+    self.placeholder = _title;
+    if (_orTrue) {
+        [self setValue:[UIColor whiteColor] forKeyPath:@"_placeholderLabel.textColor"];
+        [self setValue:[UIFont boldSystemFontOfSize:14] forKeyPath:@"_placeholderLabel.font"];
+        /// 搜索按钮
+        _rightBtn = [UIButton buttonWithType:UIButtonTypeCustom];
+        [_rightBtn setImage:[UIImage imageNamed:@"voice"] forState:UIControlStateNormal];
+        [_rightBtn addTarget:self action:@selector(rightButtonClick) forControlEvents:UIControlEventTouchUpInside];
+        [self addSubview:_rightBtn];
+        [_rightBtn mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.centerY.equalTo(self);
+            make.height.with.equalTo(@20);
+            make.right.equalTo(self).offset(-5);
+        }];
+
+    }else{
+    
+        [self setValue:[UIColor whiteColor] forKeyPath:@"_placeholderLabel.textColor"];
+        [self setValue:[UIFont boldSystemFontOfSize:14] forKeyPath:@"_placeholderLabel.font"];
+    }
+    
 }
 - (void)rightButtonClick{
 //    !_searchViewBlock ?: _searchViewBlock();

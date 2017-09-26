@@ -35,7 +35,7 @@
 @property (strong , nonatomic)NSMutableArray *homeGridArray;
 /// 热门推荐
 @property (strong , nonatomic)NSMutableArray<LBSMHotCommend *> *hotCommend;
-/* 滚回顶部按钮 */
+/// 滚回顶部按钮
 @property (strong , nonatomic)UIButton *backTopButton;
 
 @end
@@ -96,7 +96,7 @@ static NSString *const HotCommendFootView = @"LBSMHotCommendFootView";
 
     if (_searchTf == nil) {
         /// 需要添加x y
-        _searchTf = [[LBSMSearchTextField alloc]initWithFrame:CGRectMake(60, 25, [UIScreen cz_screenWidth] - 120, 35)];
+        _searchTf = [[LBSMSearchTextField alloc]initWithFrame:CGRectMake(60, 25, [UIScreen cz_screenWidth] - 120, 35) withTitle:@" 618 100元红包等你来抢" withBool:true];
         _searchTf.backgroundColor = [UIColor cz_colorWithHex:0xcf3441];
         self.navigationItem.titleView = _searchTf;
         /// 右边的按钮
