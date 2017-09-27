@@ -11,4 +11,5 @@
 @interface LBSMGoodsSetController : UIViewController
 /// plist数据
 @property (strong , nonatomic)NSString *goodName;
+- (instancetype)initWithGoodName:(NSString *)goodName;
 @end

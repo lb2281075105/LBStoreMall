@@ -282,8 +282,7 @@ static NSString *const HotCommendFootView = @"LBSMHotCommendFootView";
         NSLog(@"点击了第 %zd 个",indexPath.row);
     }else if (indexPath.section == 4){
         LBSMLog(@"热门推荐的第%zd个商品",indexPath.row);
-        LBSMGoodsSetController *goodSetVc = [[LBSMGoodsSetController alloc] init];
-        goodSetVc.goodName = @"ClasiftyGoods.plist";
+        LBSMGoodsSetController *goodSetVc = [[LBSMGoodsSetController alloc] initWithGoodName:@"ClasiftyGoods.plist"];
         [self.navigationController pushViewController:goodSetVc animated:YES];
     }
 }
