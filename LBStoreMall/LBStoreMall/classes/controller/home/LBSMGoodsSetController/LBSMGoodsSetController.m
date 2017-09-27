@@ -13,6 +13,8 @@
 @property (strong , nonatomic)UIButton *switchButton;
 /// 查找商品
 @property (strong , nonatomic)LBSMSearchTextField *searchTf;
+/// 0：列表视图，1：格子视图
+@property (nonatomic, assign) BOOL isSwitchGrid;
 @end
 
 @implementation LBSMGoodsSetController
@@ -21,6 +23,17 @@
     [super viewDidLoad];
     /// 设置导航
     [self setUpNav];
+    /// 设置基本信息
+    [self setUpInfo];
+    
+    
+}
+- (void)setUpInfo{
+    // 默认列表视图
+    _isSwitchGrid = NO;
+    self.automaticallyAdjustsScrollViewInsets = NO;
+    self.view.backgroundColor = LBSMColor(245, 245, 245);
+    // self.collectionView.backgroundColor = self.view.backgroundColor;
 }
 /// 设置导航
 - (void)setUpNav{
