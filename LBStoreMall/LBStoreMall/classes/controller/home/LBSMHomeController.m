@@ -92,13 +92,23 @@ static NSString *const HotCommendFootView = @"LBSMHotCommendFootView";
     }
     return _collectionView;
 }
+- (CGSize)intrinsicContentSize
+{
+    return CGSizeMake(200, 44);
+}
 - (LBSMSearchTextField *)searchTf{
 
     if (_searchTf == nil) {
         /// 需要添加x y
         _searchTf = [[LBSMSearchTextField alloc]initWithFrame:CGRectMake(60, 25, [UIScreen cz_screenWidth] - 120, 35) withTitle:@" 618 100元红包等你来抢" withBool:true];
         _searchTf.backgroundColor = [UIColor cz_colorWithHex:0xcf3441];
-        self.navigationItem.titleView = _searchTf;
+        [self.navigationController.navigationBar addSubview:_searchTf];
+        [_searchTf mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.center.equalTo(self.navigationController.navigationBar);
+            make.width.equalTo(@([UIScreen cz_screenWidth] - 120));
+            make.height.equalTo(@35);
+        }];
+//        self.navigationItem.titleView = _searchTf;
         /// 右边的按钮
         _searchTf.rightBtnClickBlock = ^{
             LBSMLog(@"右边点击");
