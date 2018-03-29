@@ -388,16 +388,30 @@
 			path = LBSMGoodsSetController;
 			sourceTree = "<group>";
 		};
+		3A9EC238206CC7BE001D22F4 /* net */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = net;
+			sourceTree = "<group>";
+		};
+		3A9EC239206CC7BF001D22F4 /* viewmodel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = viewmodel;
+			sourceTree = "<group>";
+		};
 		3AA90C381F651B0B00048C39 /* classes */ = {
 			isa = PBXGroup;
 			children = (
 				3AA90C391F651B0B00048C39 /* common */,
 				3AA90C3A1F651B0B00048C39 /* controller */,
 				F8A9904F1F74AB7600C2592B /* model */,
-				F8A990501F74AB7600C2592B /* net */,
 				3AA90C3D1F651B0B00048C39 /* orther */,
+				3A9EC238206CC7BE001D22F4 /* net */,
+				3A9EC239206CC7BF001D22F4 /* viewmodel */,
 				F87B43C21F678B8E005ED2BC /* view */,
-				F87B43C31F678B8E005ED2BC /* viewModel */,
 			);
 			path = classes;
 			sourceTree = "<group>";
@@ -586,13 +600,6 @@
 			path = view;
 			sourceTree = "<group>";
 		};
-		F87B43C31F678B8E005ED2BC /* viewModel */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = viewModel;
-			sourceTree = "<group>";
-		};
 		F87B43C41F678BB0005ED2BC /* main */ = {
 			isa = PBXGroup;
 			children = (
@@ -747,14 +754,6 @@
 			);
 			name = model;
 			path = orther/model;
-			sourceTree = "<group>";
-		};
-		F8A990501F74AB7600C2592B /* net */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = net;
-			path = orther/net;
 			sourceTree = "<group>";
 		};
 		F8A990511F74AB9100C2592B /* message */ = {
@@ -1005,7 +1004,7 @@
 				TargetAttributes = {
 					3AFA7EA61F64546300CC1D2D = {
 						CreatedOnToolsVersion = 8.3.3;
-						DevelopmentTeam = 9266GAZZ3C;
+						DevelopmentTeam = MECQS3Z269;
 						ProvisioningStyle = Automatic;
 					};
 					3AFA7EBF1F64546300CC1D2D = {
@@ -1358,7 +1357,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				DEVELOPMENT_TEAM = 9266GAZZ3C;
+				DEVELOPMENT_TEAM = MECQS3Z269;
 				GCC_PREFIX_HEADER = LBStoreMall/LBSMPrefixHeader.pch;
 				INFOPLIST_FILE = LBStoreMall/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
@@ -1374,7 +1373,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				DEVELOPMENT_TEAM = 9266GAZZ3C;
+				DEVELOPMENT_TEAM = MECQS3Z269;
 				GCC_PREFIX_HEADER = LBStoreMall/LBSMPrefixHeader.pch;
 				INFOPLIST_FILE = LBStoreMall/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
