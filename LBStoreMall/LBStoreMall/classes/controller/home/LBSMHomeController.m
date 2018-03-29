@@ -26,6 +26,7 @@
 #import "LBSMHotCommendCell.h"
 #import "LBSMHotCommend.h"
 #import "LBSMGoodsSetController.h"
+#import "LBTitleView.h"
 @interface LBSMHomeController ()<UICollectionViewDataSource, UICollectionViewDelegateFlowLayout>
 /// 滑动视图
 @property (strong , nonatomic)UICollectionView *collectionView;
@@ -37,6 +38,7 @@
 @property (strong , nonatomic)NSMutableArray<LBSMHotCommend *> *hotCommend;
 /// 滚回顶部按钮
 @property (strong , nonatomic)UIButton *backTopButton;
+@property (strong , nonatomic)LBTitleView *lbTitleView;
 
 @end
 /// cell
@@ -92,33 +94,13 @@ static NSString *const HotCommendFootView = @"LBSMHotCommendFootView";
     }
     return _collectionView;
 }
-- (CGSize)intrinsicContentSize
-{
-    return CGSizeMake(200, 44);
-}
-- (LBSMSearchTextField *)searchTf{
 
-    if (_searchTf == nil) {
-        /// 需要添加x y
-        _searchTf = [[LBSMSearchTextField alloc]initWithFrame:CGRectMake(60, 25, [UIScreen cz_screenWidth] - 120, 35) withTitle:@" 618 100元红包等你来抢" withBool:true];
-        _searchTf.backgroundColor = [UIColor cz_colorWithHex:0xcf3441];
-        [self.navigationController.navigationBar addSubview:_searchTf];
-        [_searchTf mas_makeConstraints:^(MASConstraintMaker *make) {
-            make.center.equalTo(self.navigationController.navigationBar);
-            make.width.equalTo(@([UIScreen cz_screenWidth] - 120));
-            make.height.equalTo(@35);
-        }];
-//        self.navigationItem.titleView = _searchTf;
-        /// 右边的按钮
-        _searchTf.rightBtnClickBlock = ^{
-            LBSMLog(@"右边点击");
-        };
-        /// 编辑按钮
-        _searchTf.searchBlock = ^{
-            LBSMLog(@"点击textF");
-        };
+- (LBTitleView *)lbTitleView{
+    if (_lbTitleView == nil) {
+        _lbTitleView = [[LBTitleView alloc]initWithFrame:CGRectMake(0, 0, [UIScreen cz_screenWidth] - 120, 35)];
+        self.navigationItem.titleView = _lbTitleView;
     }
-    return _searchTf;
+    return _lbTitleView;
 }
 
 /// 视图显示
@@ -382,7 +364,7 @@ static NSString *const HotCommendFootView = @"LBSMHotCommendFootView";
     self.navigationItem.leftBarButtonItem = [UIBarButtonItem ItemWithImage:[UIImage imageNamed:@"richScan"] WithHighlighted:[UIImage imageNamed:@"richScan"] Target:self action:@selector(richScanItemClick)];
     self.navigationItem.rightBarButtonItem = [UIBarButtonItem ItemWithImage:[UIImage imageNamed:@"message"] WithHighlighted:[UIImage imageNamed:@"message"] Target:self action:@selector(messageItemClick)];
 
-    [self searchTf];
+    [self lbTitleView];
 }
 /// 二维码扫码
 - (void)richScanItemClick{

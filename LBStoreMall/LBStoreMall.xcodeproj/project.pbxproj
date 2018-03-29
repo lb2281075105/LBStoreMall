@@ -18,6 +18,7 @@
 		3A71724F1F777CD800CA244C /* Foundation+Log.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A71724B1F777CD800CA244C /* Foundation+Log.m */; };
 		3A7172501F777CD800CA244C /* DCSpeedy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A71724E1F777CD800CA244C /* DCSpeedy.m */; };
 		3A7172551F77837900CA244C /* LBSMGoodsSetController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A7172541F77837900CA244C /* LBSMGoodsSetController.m */; };
+		3A9EC23D206CD55E001D22F4 /* LBTitleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A9EC23C206CD55E001D22F4 /* LBTitleView.m */; };
 		3AA90C5A1F651B2B00048C39 /* NSArray+Log.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AA90C431F651B2B00048C39 /* NSArray+Log.m */; };
 		3AA90C5B1F651B2B00048C39 /* NSAttributedString+CZAdditon.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AA90C451F651B2B00048C39 /* NSAttributedString+CZAdditon.m */; };
 		3AA90C5C1F651B2B00048C39 /* NSObject+CZRuntime.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AA90C471F651B2B00048C39 /* NSObject+CZRuntime.m */; };
@@ -149,6 +150,8 @@
 		3A7172511F777D5900CA244C /* PingFang Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "PingFang Medium.ttf"; sourceTree = "<group>"; };
 		3A7172531F77837900CA244C /* LBSMGoodsSetController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LBSMGoodsSetController.h; sourceTree = "<group>"; };
 		3A7172541F77837900CA244C /* LBSMGoodsSetController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LBSMGoodsSetController.m; sourceTree = "<group>"; };
+		3A9EC23B206CD55E001D22F4 /* LBTitleView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LBTitleView.h; sourceTree = "<group>"; };
+		3A9EC23C206CD55E001D22F4 /* LBTitleView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LBTitleView.m; sourceTree = "<group>"; };
 		3AA90C411F651B2B00048C39 /* CZAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CZAdditions.h; sourceTree = "<group>"; };
 		3AA90C421F651B2B00048C39 /* NSArray+Log.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+Log.h"; sourceTree = "<group>"; };
 		3AA90C431F651B2B00048C39 /* NSArray+Log.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Log.m"; sourceTree = "<group>"; };
@@ -402,6 +405,15 @@
 			path = viewmodel;
 			sourceTree = "<group>";
 		};
+		3A9EC23A206CD54B001D22F4 /* titleView */ = {
+			isa = PBXGroup;
+			children = (
+				3A9EC23B206CD55E001D22F4 /* LBTitleView.h */,
+				3A9EC23C206CD55E001D22F4 /* LBTitleView.m */,
+			);
+			path = titleView;
+			sourceTree = "<group>";
+		};
 		3AA90C381F651B0B00048C39 /* classes */ = {
 			isa = PBXGroup;
 			children = (
@@ -591,6 +603,7 @@
 		F87B43C21F678B8E005ED2BC /* view */ = {
 			isa = PBXGroup;
 			children = (
+				3A9EC23A206CD54B001D22F4 /* titleView */,
 				3AF2C9E01F7BFBFE00A5B701 /* goodList */,
 				F8A9908D1F74FEDE00C2592B /* home */,
 				F8A990831F74B9AA00C2592B /* search */,
@@ -1175,6 +1188,7 @@
 				F8A9909F1F7510E300C2592B /* UIView+DCExtension.m in Sources */,
 				3AA90C6A1F651CB900048C39 /* AppDelegate.m in Sources */,
 				F8A990011F749AB300C2592B /* GQGesVCTransition.m in Sources */,
+				3A9EC23D206CD55E001D22F4 /* LBTitleView.m in Sources */,
 				F8A990BE1F751ECD00C2592B /* LBSMHaoHuoGoodsCell.m in Sources */,
 				3A71724F1F777CD800CA244C /* Foundation+Log.m in Sources */,
 				F8A9903C1F74A71300C2592B /* ZXingWrapper.m in Sources */,
