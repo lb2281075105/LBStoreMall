@@ -76,12 +76,15 @@ static NSString *const GoodGridCollectionCell = @"LBSMGoodGridCollectionCell";
 - (void)setUpData{
 
     _goodListCommend = [LBSMGoodListCommend mj_objectArrayWithFilename:_goodName];
+    NSLog(@"_goodListCommend:%@",_goodListCommend);
 }
 - (void)setUpInfo{
     // 默认列表视图
     _isSwitchGrid = NO;
     self.automaticallyAdjustsScrollViewInsets = NO;
     self.view.backgroundColor = LBSMColor(245, 245, 245);
+    self.collectionView.backgroundColor = [UIColor whiteColor];
+    self.automaticallyAdjustsScrollViewInsets = NO;
     // self.collectionView.backgroundColor = self.view.backgroundColor;
 }
 /// 设置导航
