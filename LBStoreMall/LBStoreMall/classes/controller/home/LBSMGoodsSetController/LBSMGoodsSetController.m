@@ -133,30 +133,30 @@ static NSString *const GoodCustionHeadViewID = @"GoodCustionHeadViewID";
 }
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
-    DCListGridCell *cell = nil;
-    cell = (_isSwitchGrid) ? [collectionView dequeueReusableCellWithReuseIdentifier:DCListGridCellID forIndexPath:indexPath] : [collectionView dequeueReusableCellWithReuseIdentifier:DCSwitchGridCellID forIndexPath:indexPath];
-    cell.youSelectItem = _setItem[indexPath.row];
+    LBSMGoodListCollectionCell *cell = nil;
+    cell = (_isSwitchGrid) ? [collectionView dequeueReusableCellWithReuseIdentifier:GoodListCollectionCellID forIndexPath:indexPath] : [collectionView dequeueReusableCellWithReuseIdentifier:GoodGridCollectionCellID forIndexPath:indexPath];
+//    cell.youSelectItem = _setItem[indexPath.row];
     
     __weak typeof(self)weakSelf = self;
     if (_isSwitchGrid) { //列表Cell
         __weak typeof(cell)weakCell = cell;
-        cell.colonClickBlock = ^{ // 冒号点击
-            __strong typeof(weakSelf)strongSelf = weakSelf;
-            [strongSelf setUpColonInsView:weakCell];
-            [strongSelf.colonView setUpUI]; // 初始化
-            strongSelf.colonView.collectionBlock = ^{
-                NSLog(@"点击了收藏%zd",indexPath.row);
-            };
-            strongSelf.colonView.addShopCarBlock = ^{
-                NSLog(@"点击了加入购物车%zd",indexPath.row);
-            };
-            strongSelf.colonView.sameBrandBlock = ^{
-                NSLog(@"点击了同品牌%zd",indexPath.row);
-            };
-            strongSelf.colonView.samePriceBlock = ^{
-                NSLog(@"点击了同价格%zd",indexPath.row);
-            };
-        };
+//        cell.colonClickBlock = ^{ // 冒号点击
+//            __strong typeof(weakSelf)strongSelf = weakSelf;
+//            [strongSelf setUpColonInsView:weakCell];
+//            [strongSelf.colonView setUpUI]; // 初始化
+//            strongSelf.colonView.collectionBlock = ^{
+//                NSLog(@"点击了收藏%zd",indexPath.row);
+//            };
+//            strongSelf.colonView.addShopCarBlock = ^{
+//                NSLog(@"点击了加入购物车%zd",indexPath.row);
+//            };
+//            strongSelf.colonView.sameBrandBlock = ^{
+//                NSLog(@"点击了同品牌%zd",indexPath.row);
+//            };
+//            strongSelf.colonView.samePriceBlock = ^{
+//                NSLog(@"点击了同价格%zd",indexPath.row);
+//            };
+//        };
     }
     
     return cell;
@@ -167,11 +167,11 @@ static NSString *const GoodCustionHeadViewID = @"GoodCustionHeadViewID";
     UICollectionReusableView *reusableview = nil;
     if (kind == UICollectionElementKindSectionHeader){
         
-        DCCustionHeadView *headerView = [collectionView dequeueReusableSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:DCCustionHeadViewID forIndexPath:indexPath];
+        LBSMGoodCustionHeadView *headerView = [collectionView dequeueReusableSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:GoodCustionHeadViewID forIndexPath:indexPath];
         __weak typeof(self)weakSelf = self;
-        headerView.filtrateClickBlock = ^{//点击了筛选
-            [weakSelf filtrateButtonClick];
-        };
+//        headerView.filtrateClickBlock = ^{//点击了筛选
+//            [weakSelf filtrateButtonClick];
+//        };
         reusableview = headerView;
     }
     return reusableview;
