@@ -33,6 +33,7 @@
 		3AA90C651F651B2B00048C39 /* UIViewController+CZAddition.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AA90C591F651B2B00048C39 /* UIViewController+CZAddition.m */; };
 		3AA90C6A1F651CB900048C39 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AA90C691F651CB900048C39 /* AppDelegate.m */; };
 		3AA90C6E1F651D2100048C39 /* LBSMTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AA90C6D1F651D2100048C39 /* LBSMTabBarController.m */; };
+		3AD8B654207BB9870086B302 /* LBSMGoodCustionHeadView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AD8B653207BB9870086B302 /* LBSMGoodCustionHeadView.m */; };
 		3AF2C9DF1F7BF82C00A5B701 /* LBSMGoodListCommend.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AF2C9DE1F7BF82C00A5B701 /* LBSMGoodListCommend.m */; };
 		3AF2C9E31F7BFC3A00A5B701 /* LBSMGoodListCollectionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AF2C9E21F7BFC3A00A5B701 /* LBSMGoodListCollectionCell.m */; };
 		3AF2C9E61F7BFC4E00A5B701 /* LBSMGoodGridCollectionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AF2C9E51F7BFC4E00A5B701 /* LBSMGoodGridCollectionCell.m */; };
@@ -183,6 +184,8 @@
 		3AA90C691F651CB900048C39 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		3AA90C6C1F651D2100048C39 /* LBSMTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LBSMTabBarController.h; sourceTree = "<group>"; };
 		3AA90C6D1F651D2100048C39 /* LBSMTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LBSMTabBarController.m; sourceTree = "<group>"; };
+		3AD8B652207BB9870086B302 /* LBSMGoodCustionHeadView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LBSMGoodCustionHeadView.h; sourceTree = "<group>"; };
+		3AD8B653207BB9870086B302 /* LBSMGoodCustionHeadView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LBSMGoodCustionHeadView.m; sourceTree = "<group>"; };
 		3AF2C9DD1F7BF82C00A5B701 /* LBSMGoodListCommend.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LBSMGoodListCommend.h; sourceTree = "<group>"; };
 		3AF2C9DE1F7BF82C00A5B701 /* LBSMGoodListCommend.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LBSMGoodListCommend.m; sourceTree = "<group>"; };
 		3AF2C9E11F7BFC3A00A5B701 /* LBSMGoodListCollectionCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LBSMGoodListCollectionCell.h; sourceTree = "<group>"; };
@@ -523,6 +526,8 @@
 				3AF2C9E21F7BFC3A00A5B701 /* LBSMGoodListCollectionCell.m */,
 				3AF2C9E41F7BFC4E00A5B701 /* LBSMGoodGridCollectionCell.h */,
 				3AF2C9E51F7BFC4E00A5B701 /* LBSMGoodGridCollectionCell.m */,
+				3AD8B652207BB9870086B302 /* LBSMGoodCustionHeadView.h */,
+				3AD8B653207BB9870086B302 /* LBSMGoodCustionHeadView.m */,
 			);
 			path = goodList;
 			sourceTree = "<group>";
@@ -1225,6 +1230,7 @@
 				3AA90C611F651B2B00048C39 /* UIColor+CZAddition.m in Sources */,
 				F8A9903D1F74A71300C2592B /* LBXAlertAction.m in Sources */,
 				F8A990C11F75200100C2592B /* LBSMHaoHuoGoodsModel.m in Sources */,
+				3AD8B654207BB9870086B302 /* LBSMGoodCustionHeadView.m in Sources */,
 				3AFA7EAC1F64546300CC1D2D /* main.m in Sources */,
 				F8ABAF681F761C5900C75B82 /* LBSMHaoGoodsButton.m in Sources */,
 				F8A9904E1F74AAF700C2592B /* LBSMMessageCell.m in Sources */,
