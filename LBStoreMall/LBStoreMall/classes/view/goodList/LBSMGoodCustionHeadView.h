@@ -9,5 +9,6 @@
 #import <UIKit/UIKit.h>
 
 @interface LBSMGoodCustionHeadView : UICollectionReusableView
-
+// 筛选点击回调
+@property (nonatomic, copy) dispatch_block_t filtrateClickBlock;
 @end

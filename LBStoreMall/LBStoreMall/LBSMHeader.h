@@ -16,9 +16,11 @@
 #define kHeight [UIScreen cz_screenHeight] / 750.0
 //标题字体
 #define LBSMFont(font)      [UIFont systemFontOfSize:font]
+#define LBSMMargin 10
 
 //通过RGB设置颜色
 #define LBSMColor(R,G,B)        [UIColor colorWithRed:R/255.0 green:G/255.0 blue:B/255.0 alpha:1.0]
+
 //应用程序的屏幕高度
 #define kWindowH        [UIScreen mainScreen].bounds.size.height
 //应用程序的屏幕宽度
@@ -29,6 +31,7 @@
 #define PinPaiImagesArray  @[@"http://gfs1.gomein.net.cn/T1koKvBT_g1RCvBVdK.jpg",@"http://gfs3.gomein.net.cn/T1n5JvB_Eb1RCvBVdK.jpg",@"http://gfs10.gomein.net.cn/T1jThTB_Ls1RCvBVdK.jpeg",@"http://gfs7.gomein.net.cn/T1T.YvBbbg1RCvBVdK.jpg",@"http://gfs6.gomein.net.cn/T1toCvBKKT1RCvBVdK.jpg",@"http://gfs5.gomein.net.cn/T1JZLvB4Jj1RCvBVdK.jpg",@"http://gfs5.gomein.net.cn/T1JZLvB4Jj1RCvBVdK.jpg",@"http://gfs3.gomein.net.cn/T1ckKvBTW_1RCvBVdK.jpg",@"http://gfs.gomein.net.cn/T1hNCvBjKT1RCvBVdK.jpg"]
 #define cellWH kWindowW * 0.5 - 50
 #define PFR [[[UIDevice currentDevice] systemVersion] floatValue] >= 9.0 ? @"PingFangSC-Regular" : @"PingFang SC"
+
 #elif
 #define LBSMLog(...)
 #endif
